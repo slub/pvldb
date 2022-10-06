@@ -21,10 +21,10 @@ knitr::opts_knit$set(root.dir = "..")
 - [Crossref API](https://api.crossref.org)
   - members
     - [5777](https://api.crossref.org/members/5777?mailto=bibliometrie@slub-dresden.de)
+  - prefixes
+    - [10.14778](https://api.crossref.org/prefixes/10.14778?mailto=bibliometrie@slub-dresden.de)
   - journals
     - [2150-8097](https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de)
-  - prefix
-    - [10.14778](https://api.crossref.org/prefixes/10.14778?mailto=bibliometrie@slub-dresden.de)
   - works
     - [filter=issn:2150-8097](https://api.crossref.org/works?filter=issn:2150-8097&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,has-references:true&mailto=bibliometrie@slub-dresden.de)
@@ -34,3 +34,5 @@ knitr::opts_knit$set(root.dir = "..")
   - works
     - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
+  - citations
+  - references
