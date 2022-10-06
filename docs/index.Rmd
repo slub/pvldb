@@ -1,5 +1,6 @@
 ---
 title: "PVLDB"
+subtitle: "Citations and References"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 lang: "en-US"
 output:
@@ -11,3 +12,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE, error = FALSE, message = FALSE, warning = FALSE)
 knitr::opts_knit$set(root.dir = "..")
 ```
+
+# Data Sources
+
+- [Crossref API](https://api.crossref.org)
+- [OpenAlex API](https://docs.openalex.org)
+- [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
