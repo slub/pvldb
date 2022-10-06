@@ -26,4 +26,6 @@ knitr::opts_knit$set(root.dir = "..")
 - [OpenAlex API](https://docs.openalex.org)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
+  - works
+    - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185?mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
