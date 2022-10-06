@@ -6,6 +6,8 @@ lang: "en-US"
 output:
   html_document:
     mathjax: null
+    includes:
+      after_body: assets/html/target.html
 ---
 
 ```{r setup, include=F}
