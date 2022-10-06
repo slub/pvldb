@@ -1,0 +1,3 @@
+#!/usr/bin/env Rscript
+fps <- list.files("docs", pattern=".*\\.Rmd", full.names = T, recursive = T)
+for (fp in fps) { rmarkdown::render(fp, output_format = "all", output_dir = "public") }

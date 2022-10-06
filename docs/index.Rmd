@@ -1,0 +1,13 @@
+---
+title: "PVLDB"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+lang: "en-US"
+output:
+  html_document:
+    mathjax: null
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = FALSE, error = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_knit$set(root.dir = "..")
+```
