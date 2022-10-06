@@ -19,6 +19,8 @@ knitr::opts_knit$set(root.dir = "..")
 # Data Sources
 
 - [Crossref API](https://api.crossref.org)
+  - members
+    - [5777](http://api.crossref.org/members/5777?mailto=bibliometrie@slub-dresden.de)
   - journals
     - [2150-8097](https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de)
   - prefix
