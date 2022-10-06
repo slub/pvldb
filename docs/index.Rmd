@@ -1,6 +1,7 @@
 ---
 title: "PVLDB"
 subtitle: "Citations and References"
+pagetitle: "PVLDB :: Citations and References"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 lang: "en-US"
 output:
