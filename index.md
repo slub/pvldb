@@ -1,7 +1,7 @@
 ---
 title: "PVLDB"
-subtitle: "Bibliometrics"
-pagetitle: "PVLDB :: Bibliometrics"
+subtitle: "Bibliometric Analysis"
+pagetitle: "PVLDB :: Bibliometric Analysis"
 date: "2022-10-07"
 lang: "en-US"
 output:
