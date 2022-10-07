@@ -4,13 +4,6 @@
 import os
 import json
 from habanero import Crossref
-from datetime import datetime
-
-TODAY = datetime.today().date().isoformat()
-
-
-def get_client():
-    return Crossref(mailto="bibliometrie@slub-dresden.de")
 
 
 def store_json(obj, path):
@@ -23,41 +16,83 @@ def store_json_pretty(obj, path):
         json.dump(obj, f, indent=2)
 
 
-def get_dois(items):
-    return [item["DOI"] for item in items]
-
-
-def get_dois_from_references(items):
-    mapping = {}
-    for item in items:
-        doi = item["DOI"]
-        mapping[doi] = []
-        if "reference" in item:
-            for ref in item["reference"]:
-                if "DOI" in ref:
-                    mapping[doi].append(ref["DOI"])
-    return mapping
-
-
-def main():
-    cr = get_client()
-    items = []
+def get_works():
+    cr = Crossref(mailto="bibliometrie@slub-dresden.de")
+    works = []
     response = cr.works(filter={"issn": "2150-8097"},
                         cursor="*", cursor_max=100000, sort="published",
                         order="desc", limit=100, progress_bar=True)
     for batch in response:
         if "status" in batch and batch["status"] == "ok":
             for item in batch["message"]["items"]:
-                items.append(item)
+                works.append(item)
+    return works
+
+
+def get_dois(works):
+    dois = [item["DOI"] for item in works]
+    dois.sort()
+    return dois
+
+
+def get_dois_from_references(works):
+    mapping = {}
+    for item in works:
+        doi = item["DOI"]
+        mapping[doi] = []
+        if "reference" in item:
+            for ref in item["reference"]:
+                if "DOI" in ref:
+                    mapping[doi].append(ref["DOI"])
+        else:
+            mapping[doi] = None
+    mapping = dict(sorted(mapping.items()))
+    return mapping
+
+
+def get_types_per_year(works):
+    mapping = {}
+    for item in works:
+        year = 1970
+        if "published" in item:
+            if "date-parts" in item["published"]:
+                if len(item["published"]["date-parts"]) > 0:
+                    if len(item["published"]["date-parts"][0]) > 0:
+                        year = item["published"]["date-parts"][0][0]
+        if year > 1970:
+            if year in mapping:
+                mapping[year].append(item["type"])
+            else:
+                mapping[year] = [item["type"]]
+    for year in mapping.keys():
+        mapping[year].sort()
+    mapping = dict(sorted(mapping.items()))
+    return mapping
+
+
+def main():
+    works = get_works()
     if not os.path.exists("public/data"):
         os.makedirs("public/data")
-    store_json(items, "public/data/crossref_works_2150-8097_{0}.json".format(TODAY))
-    doi_list = get_dois(items)
-    doi_list.sort()
-    store_json_pretty(doi_list, "public/data/crossref_works_2150-8097_dois_{0}.json".format(TODAY))
-    reference_mapping = get_dois_from_references(items)
-    reference_mapping = dict(sorted(reference_mapping.items()))
-    store_json_pretty(reference_mapping, "public/data/crossref_works_2150-8097_reference_dois_{0}.json".format(TODAY))
+    store_json(
+        works,
+        "public/data/crossref_works_2150-8097.json"
+        )
+    doi_list = get_dois(works)
+    store_json_pretty(
+        doi_list,
+        "public/data/crossref_works_2150-8097_dois.json"
+        )
+    reference_dois = get_dois_from_references(works)
+    store_json_pretty(
+        reference_dois,
+        "public/data/crossref_works_2150-8097_reference-dois.json"
+        )
+    year_types = get_types_per_year(works)
+    store_json_pretty(
+        year_types,
+        "public/data/crossref_works_2150-8097_year-types.json"
+        )
 
 
 if __name__ == '__main__':
