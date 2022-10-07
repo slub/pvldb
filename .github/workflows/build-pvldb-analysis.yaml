@@ -5,14 +5,14 @@ on:
     paths:
       - 'docs/**'
       - 'utils/**'
-      - '.github/workflows/render-rmarkdown.yaml'
+      - '.github/workflows/build-pvldb-analysis.yaml'
       - 'renv.lock'
       - 'requirements.txt'
 
-name: render-rmarkdown
+name: build-pvldb-analysis
 
 jobs:
-  render-rmarkdown:
+  build-pvldb-analysis:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
