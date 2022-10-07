@@ -14,6 +14,8 @@ output:
 
 
 
+
+
 # Count Data
 
 
@@ -43,10 +45,10 @@ output:
 # Raw Data
 
 - Crossref
-  - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`)
-    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json)
-    - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json)
-    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json)
+  - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
+    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 0.10 MB]
+    - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json) [JSON, 2.01 MB]
+    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 0.08 MB]
 
 # Data Sources
 
