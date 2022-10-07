@@ -41,3 +41,12 @@ knitr::opts_knit$set(root.dir = "..")
     - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
+
+# Content Access
+
+- ACM DL
+  - Journals
+    - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
+- DBLP
+  - Journals
+    - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
