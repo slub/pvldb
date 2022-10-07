@@ -1,3 +1,3 @@
-# pvldb
+# Bibliometric Analysis of PVLDB
 
-The goal of pvldb is to …
+See [build](https://herreio.github.io/pvldb/) for results.
