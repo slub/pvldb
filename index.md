@@ -1,7 +1,7 @@
 ---
 title: "PVLDB"
-subtitle: "Citations and References"
-pagetitle: "PVLDB :: Citations and References"
+subtitle: "Bibliometrics"
+pagetitle: "PVLDB :: Bibliometrics"
 date: "2022-10-07"
 lang: "en-US"
 output:
@@ -18,7 +18,13 @@ output:
 
 
 
+
+
 ## Works
+
+
+
+![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/crossref-works-count-plot-1.png)<!-- -->
 
 
 
@@ -53,6 +59,7 @@ output:
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
   - works
     - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185&mailto=bibliometrie@slub-dresden.de)
+    - [filter=host_venue.id:V4210226185&group_by=type](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=type&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
 
