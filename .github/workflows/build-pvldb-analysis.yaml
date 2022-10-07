@@ -44,6 +44,9 @@ jobs:
       - name: Create .nojekyll file
         run: touch public/.nojekyll
 
+      - name: Copy LICENSE file
+        run: cp LICENSE public/LICENSE
+
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@4.1.4
