@@ -14,6 +14,8 @@ output:
 
 
 
+[[md](./index.md)]
+
 # Count Data
 
 
@@ -60,6 +62,7 @@ output:
   - works
     - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185&mailto=bibliometrie@slub-dresden.de)
     - [filter=host_venue.id:V4210226185&group_by=type](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=type&mailto=bibliometrie@slub-dresden.de)
+    - [filter=host_venue.id:V4210226185&group_by=publication_year](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=publication_year&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
 
