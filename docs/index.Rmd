@@ -50,3 +50,5 @@ knitr::opts_knit$set(root.dir = "..")
 - DBLP
   - Journals
     - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
+- VLDB Endowment
+  - [PVLDB (Proceedings of the VLDB Endowment)](https://vldb.org/pvldb/)
