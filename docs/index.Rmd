@@ -20,8 +20,10 @@ knitr::opts_knit$set(root.dir = "..")
 
 - [Crossref API](https://api.crossref.org)
   - members
+    - [320](https://api.crossref.org/members/320?mailto=bibliometrie@slub-dresden.de)
     - [5777](https://api.crossref.org/members/5777?mailto=bibliometrie@slub-dresden.de)
   - prefixes
+    - [10.1145](https://api.crossref.org/prefixes/10.1145?mailto=bibliometrie@slub-dresden.de)
     - [10.14778](https://api.crossref.org/prefixes/10.14778?mailto=bibliometrie@slub-dresden.de)
   - journals
     - [2150-8097](https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de)
