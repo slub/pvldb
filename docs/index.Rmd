@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = FALSE, error = FALSE, message = FALSE, warning = FA
 knitr::opts_knit$set(root.dir = "..")
 ```
 
+[[md](./index.md)]
+
 # Count Data
 
 ```{r openalex-raw-data}
