@@ -6,11 +6,21 @@ See [build](https://herreio.github.io/pvldb/) for results.
 
 ### Requirements
 
-- \*nix OS
+- Unix-like OS
 - R (tested with Version 4.2)
 - Python (tested with Version 3.10)
 
 ### Set up
+
+#### Python
+
+```sh
+python3 -m venv env
+. env/bin/activate
+pip install -r requirements.txt
+```
+
+#### R
 
 ```sh
 Rscript renv/activate.R
