@@ -17,6 +17,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Python requirements
+        run: pip install -r requirements.txt
+
+      - name: Retrieve data via Crossref
+        run: utils/crossref
+
       - uses: r-lib/actions/setup-pandoc@v2
 
       - uses: r-lib/actions/setup-r@v2
