@@ -76,22 +76,22 @@ def main():
         os.makedirs("public/data")
     store_json(
         works,
-        "public/data/crossref_works_2150-8097.json"
+        "public/data/crossref_works_filter-issn-2150-8097.json"
         )
     doi_list = get_dois(works)
     store_json_pretty(
         doi_list,
-        "public/data/crossref_works_2150-8097_dois.json"
+        "public/data/crossref_works_filter-issn-2150-8097_dois.json"
         )
     reference_dois = get_dois_from_references(works)
     store_json_pretty(
         reference_dois,
-        "public/data/crossref_works_2150-8097_reference-dois.json"
+        "public/data/crossref_works_filter-issn-2150-8097_reference-dois.json"
         )
     year_types = get_types_per_year(works)
     store_json_pretty(
         year_types,
-        "public/data/crossref_works_2150-8097_year-types.json"
+        "public/data/crossref_works_filter-issn-2150-8097_year-types.json"
         )
 
 
