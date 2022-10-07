@@ -57,6 +57,22 @@ oa_citation_count_by_year <- do.call("rbind", lapply(oa_venue$counts_by_year, fu
 ggplot2::ggplot(oa_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(oa_citation_count_by_year$year)) + ggplot2::ggtitle("PVLDB Citations Count (OpenAlex)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
+```{r jcr-citations-count-data}
+jcr_citation_count_by_year <- data.frame(year=c(2019, 2020, 2021), count=c(7166, 7198, 10242))
+```
+
+```{r jcr-citations-count-plot}
+ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(jcr_citation_count_by_year$year)) + ggplot2::ggtitle("PVLDB Citations Count (2021 Journal Citation Reports © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
+# Raw Data
+
+- Crossref
+  - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`)
+    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json)
+    - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json)
+    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json)
+
 # Data Sources
 
 - [Crossref API](https://api.crossref.org)
