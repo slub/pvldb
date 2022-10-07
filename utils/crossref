@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import json
+from habanero import Crossref
+from datetime import datetime
+
+TODAY = datetime.today().date().isoformat()
+
+
+def get_client():
+    return Crossref(mailto="bibliometrie@slub-dresden.de")
+
+
+def store_json(obj, path):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f)
+
+
+def store_json_pretty(obj, path):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2)
+
+
+def get_dois(items):
+    return [item["DOI"] for item in items]
+
+
+def get_dois_from_references(items):
+    mapping = {}
+    for item in items:
+        doi = item["DOI"]
+        mapping[doi] = []
+        if "reference" in item:
+            for ref in item["reference"]:
+                if "DOI" in ref:
+                    mapping[doi].append(ref["DOI"])
+    return mapping
+
+
+def main():
+    cr = get_client()
+    items = []
+    response = cr.works(filter={"issn": "2150-8097"},
+                        cursor="*", cursor_max=100000, sort="published",
+                        order="desc", limit=100, progress_bar=True)
+    for batch in response:
+        if "status" in batch and batch["status"] == "ok":
+            for item in batch["message"]["items"]:
+                items.append(item)
+    if not os.path.exists("public/data"):
+        os.makedirs("public/data")
+    store_json(items, "public/data/crossref_works_2150-8097_{0}.json".format(TODAY))
+    doi_list = get_dois(items)
+    doi_list.sort()
+    store_json_pretty(doi_list, "public/data/crossref_works_2150-8097_dois_{0}.json".format(TODAY))
+    reference_mapping = get_dois_from_references(items)
+    reference_mapping = dict(sorted(reference_mapping.items()))
+    store_json_pretty(reference_mapping, "public/data/crossref_works_2150-8097_reference_dois_{0}.json".format(TODAY))
+
+
+if __name__ == '__main__':
+    main()
