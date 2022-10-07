@@ -38,6 +38,18 @@ output:
 
 ![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/openalex-citations-count-plot-1.png)<!-- -->
 
+
+
+![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/jcr-citations-count-plot-1.png)<!-- -->
+
+# Raw Data
+
+- Crossref
+  - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`)
+    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json)
+    - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json)
+    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json)
+
 # Data Sources
 
 - [Crossref API](https://api.crossref.org)
