@@ -106,11 +106,9 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 # Content Access
 
-- ACM DL
-  - Journals
-    - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
-- DBLP
-  - Journals
-    - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
 - VLDB Endowment
   - [PVLDB (Proceedings of the VLDB Endowment)](https://vldb.org/pvldb/)
+- ACM DL > Collections > Hosted Content
+    - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
+- DBLP > Journals
+    - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
