@@ -16,6 +16,8 @@ output:
 
 
 
+Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages)
+
 # Count Data
 
 
@@ -101,3 +103,8 @@ output:
     - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
 - DBLP > Journals
     - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
+
+# Usage Terms
+
+- Raw Data: [CC0 1.0](./data/LICENSE)
+- Report Files: [CC BY 4.0](./LICENSE)
