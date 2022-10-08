@@ -86,6 +86,11 @@ Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https:
 - [Crossref Event Data API](https://www.eventdata.crossref.org/)
   - events
     - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
+- [ISSN Portal LD Service](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/)
+  - resource/ISSN
+    - [2150-8097](https://portal.issn.org/resource/ISSN/2150-8097?format=json)
+  - resource/ISSN-L
+    - [2150-8097](https://portal.issn.org/resource/ISSN-L/2150-8097?format=json)
 - [JournalsDB API](https://api.journalsdb.org/apidocs/)
   - journals
     - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
