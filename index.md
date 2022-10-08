@@ -1,7 +1,9 @@
 ---
 title: "PVLDB"
+author: "Donatus Herre"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
+author-meta: "SLUB Dresden"
 date: "2022-10-08"
 lang: "en-US"
 output:
@@ -106,5 +108,5 @@ Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https:
 
 # Usage Terms
 
-- Raw Data: [CC0 1.0](./data/LICENSE)
-- Report Files: [CC BY 4.0](./LICENSE)
+[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [report](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE).  
+[![Public Domain Dedication](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/) The [raw data](#raw-data) is made available under the [CC0 1.0 Universal Public Domain Dedication](./data/LICENSE).
