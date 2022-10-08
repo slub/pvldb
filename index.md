@@ -86,6 +86,9 @@ output:
     - [filter=host_venue.id:V4210226185&group_by=publication_year](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=publication_year&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
+- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access)
+  - Linked Data Interface
+    - [Q27722874](https://www.wikidata.org/wiki/Special:EntityData/Q27722874.json)
 
 # Content Access
 
