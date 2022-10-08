@@ -52,7 +52,7 @@ cr_works_count_by_year <- do.call("rbind", lapply(cr_journal$message$breakdowns$
 ```
 
 ```{r crossref-works-count-plot}
-ggplot2::ggplot(cr_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(cr_works_count_by_year$year)) + ggplot2::ggtitle("PVLDB Works Count (Crossref)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(cr_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=cr_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (Crossref)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ```{r journalsdb-works-count-data}
@@ -60,7 +60,7 @@ jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_ye
 ```
 
 ```{r journalsdb-works-count-plot}
-ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(jdb_works_count_by_year$year)) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jdb_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ```{r openalex-works-count-data}
@@ -68,7 +68,7 @@ oa_works_count_by_year <- do.call("rbind", lapply(oa_venue$counts_by_year, funct
 ```
 
 ```{r openalex-works-count-plot}
-ggplot2::ggplot(oa_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(oa_works_count_by_year$year)) + ggplot2::ggtitle("PVLDB Works Count (OpenAlex)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(oa_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=oa_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (OpenAlex)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ## Citations
@@ -78,7 +78,7 @@ oa_citation_count_by_year <- do.call("rbind", lapply(oa_venue$counts_by_year, fu
 ```
 
 ```{r openalex-citations-count-plot}
-ggplot2::ggplot(oa_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(oa_citation_count_by_year$year)) + ggplot2::ggtitle("PVLDB Citations Count (OpenAlex)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(oa_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=oa_citation_count_by_year$year) + ggplot2::ggtitle("PVLDB Citations Count (OpenAlex)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ```{r jcr-citations-count-data}
@@ -86,7 +86,7 @@ jcr_citation_count_by_year <- data.frame(year=c(2019, 2020, 2021), count=c(7166,
 ```
 
 ```{r jcr-citations-count-plot}
-ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(jcr_citation_count_by_year$year)) + ggplot2::ggtitle("PVLDB Citations Count (2021 Journal Citation Reports © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jcr_citation_count_by_year$year) + ggplot2::ggtitle("PVLDB Citations Count (2021 Journal Citation Reports © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 # Raw Data
