@@ -22,11 +22,17 @@ output:
 
 
 
+
+
 ## Works
 
 
 
 ![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/crossref-works-count-plot-1.png)<!-- -->
+
+
+
+![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/journalsdb-works-count-plot-1.png)<!-- -->
 
 
 
@@ -68,6 +74,9 @@ output:
     - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
+- [JournalsDB API](https://api.journalsdb.org/apidocs/)
+    - journals
+      - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
