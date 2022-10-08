@@ -12,6 +12,13 @@ See [build](https://herreio.github.io/pvldb/) for results.
 
 ### Set up
 
+#### Repository
+
+```sh
+git clone git@github.com:herreio/pvldb.git
+cd pvldb
+```
+
 #### Python
 
 ```sh
