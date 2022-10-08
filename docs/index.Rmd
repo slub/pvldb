@@ -106,9 +106,12 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
+- [Crossref Event Data API](https://www.eventdata.crossref.org/)
+  - events
+    - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
 - [JournalsDB API](https://api.journalsdb.org/apidocs/)
-    - journals
-      - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
+  - journals
+    - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
