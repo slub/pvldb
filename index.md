@@ -8,6 +8,11 @@ date: "2022-10-08"
 lang: "en-US"
 output:
   html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
     mathjax: null
     includes:
       after_body: assets/html/target.html
