@@ -44,8 +44,11 @@ jobs:
       - name: Create .nojekyll file
         run: touch public/.nojekyll
 
-      - name: Copy LICENSE file
-        run: cp LICENSE public/LICENSE
+      - name: Retrieve file LICENSE
+        run: curl https://creativecommons.org/licenses/by/4.0/legalcode.txt > public/LICENSE
+
+      - name: Retrieve file data/LICENSE
+        run: curl https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt > public/data/LICENSE
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'

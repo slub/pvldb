@@ -135,3 +135,8 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
 - DBLP > Journals
     - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
+
+# Usage Terms
+
+- Raw Data: [CC0 1.0](./data/LICENSE)
+- Report Files: [CC BY 4.0](./LICENSE)
