@@ -1,6 +1,6 @@
 # Bibliometric Analysis of PVLDB
 
-Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [build](https://herreio.github.io/pvldb/) for results.
+Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [build](https://herreio.github.io/pvldb/) for results. The build files can be found on the [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages) branch.
 
 ## Development
 
