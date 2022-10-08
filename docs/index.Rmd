@@ -24,12 +24,16 @@ kbsize <- function(path) format(round(file.info(path)$size/1000, 2), nsmall=2)
 
 # Count Data
 
-```{r openalex-raw-data}
-oa_venue <- jsonlite::read_json("https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de")
-```
-
 ```{r crossref-raw-data}
 cr_journal <- jsonlite::read_json("https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de")
+```
+
+```{r journalsdb-raw-data}
+jdb_journal <- jsonlite::read_json("https://api.journalsdb.org/journals/2150-8097")
+```
+
+```{r openalex-raw-data}
+oa_venue <- jsonlite::read_json("https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de")
 ```
 
 ## Works
@@ -40,6 +44,14 @@ cr_works_count_by_year <- do.call("rbind", lapply(cr_journal$message$breakdowns$
 
 ```{r crossref-works-count-plot}
 ggplot2::ggplot(cr_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(cr_works_count_by_year$year)) + ggplot2::ggtitle("PVLDB Works Count (Crossref)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
+```{r journalsdb-works-count-data}
+jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_year, function(x) data.frame(year=x[[1]], count=as.integer(x[[2]]))))
+```
+
+```{r journalsdb-works-count-plot}
+ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=rev(jdb_works_count_by_year$year)) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ```{r openalex-works-count-data}
@@ -94,6 +106,9 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
+- [JournalsDB API](https://api.journalsdb.org/apidocs/)
+    - journals
+      - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
