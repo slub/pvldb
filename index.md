@@ -2,7 +2,7 @@
 title: "PVLDB"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
-date: "2022-10-07"
+date: "2022-10-08"
 lang: "en-US"
 output:
   html_document:
@@ -80,11 +80,9 @@ output:
 
 # Content Access
 
-- ACM DL
-  - Journals
-    - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
-- DBLP
-  - Journals
-    - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
 - VLDB Endowment
   - [PVLDB (Proceedings of the VLDB Endowment)](https://vldb.org/pvldb/)
+- ACM DL > Collections > Hosted Content
+    - [Proceedings of the VLDB Endowment](https://dl.acm.org/journal/pvldb)
+- DBLP > Journals
+    - [Proceedings of the VLDB Endowment](https://dblp.org/db/journals/pvldb/)
