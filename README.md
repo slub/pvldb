@@ -40,3 +40,11 @@ Rscript -e "renv::restore()"
 utils/crossref
 utils/render
 ```
+
+## Meta
+
+- License: [GPL3](./LICENSE)
+- Copyright Holder: [SLUB Dresden](https://www.slub-dresden.de)
+- Author + Maintainer: [Donatus Herre](https://orcid.org/0000-0003-4335-2535)
+- Bug Tracker: [GitHub](https://github.com/herreio/pvldb/issues)
+- Contact: [bibliometrie@slub-dresden.de](mailto:bibliometrie@slub-dresden.de)
