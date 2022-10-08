@@ -41,7 +41,7 @@ def get_works():
     cr = Crossref(mailto="bibliometrie@slub-dresden.de")
     works = []
     response = cr.works(filter={"issn": "2150-8097"},
-                        cursor="*", cursor_max=100000, sort="published",
+                        cursor="*", cursor_max=100000, sort="indexed",
                         order="desc", limit=100, progress_bar=True)
     for batch in response:
         if "status" in batch and batch["status"] == "ok":
