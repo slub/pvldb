@@ -4,7 +4,7 @@ author: "Donatus Herre"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-08"
+date: "2022-10-09"
 lang: "en-US"
 output:
   html_document:
@@ -62,6 +62,7 @@ Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https:
 - Crossref
   - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
+    - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois_article.json) [JSON, 100.42 KB]
     - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json) [JSON, 2.01 MB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
 
