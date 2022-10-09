@@ -200,7 +200,7 @@ def oc_request(url, repeat=0):
         if repeat < 3:
             repeat += 1
             time.sleep(1.1)
-            return oc_request(url, repeat)
+            return oc_request(url, repeat=repeat)
         return None
 
 
