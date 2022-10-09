@@ -23,8 +23,19 @@ import os
 import time
 import json
 import tqdm
+import logging
 import requests
 from habanero import Crossref
+from datetime import timedelta
+from timeit import default_timer as timer
+from tqdm.contrib.logging import logging_redirect_tqdm
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+logger = logging.getLogger("utils/crossref")
 
 
 def store_json(obj, path):
@@ -62,19 +73,22 @@ def doi_tracker(doi):
 def get_works(dois):
     cr = Crossref(mailto="bibliometrie@slub-dresden.de")
     works = []
-    for doi in tqdm.tqdm(dois):
-        response = cr.works(ids=[doi], warn=True)
-        if isinstance(response, dict) and "status" in response \
-                and response["status"] == "ok":
-            works.append(response["message"])
-        elif response is None:
-            new_doi = doi_tracker(doi)
-            if new_doi is not None:
-                print("Change of DOI", doi, "to new DOI", new_doi, "detected!")
-                response = cr.works(ids=[new_doi], warn=True)
-                if isinstance(response, dict) and "status" in response \
-                        and response["status"] == "ok":
-                    works.append(response["message"])
+    with logging_redirect_tqdm():
+        for doi in tqdm.tqdm(dois):
+            response = cr.works(ids=[doi], warn=True)
+            if isinstance(response, dict) and "status" in response \
+                    and response["status"] == "ok":
+                works.append(response["message"])
+            elif response is None:
+                new_doi = doi_tracker(doi)
+                if new_doi is not None:
+                    msg = "Change of DOI {0} to new DOI {1} detected!".format(
+                        doi, new_doi)
+                    logger.info(msg)
+                    response = cr.works(ids=[new_doi], warn=True)
+                    if isinstance(response, dict) and "status" in response \
+                            and response["status"] == "ok":
+                        works.append(response["message"])
     return works
 
 
@@ -170,8 +184,8 @@ def oc_request(url, repeat=0):
     try:
         response = requests.get(url, headers=headers)
     except Exception as e:
-        print("Request to URL", url, "failed!")
-        print("Exception of type", e.__class__.__name__, "was thrown!")
+        logger.error("Request to URL %s failed!" % url)
+        logger.error("Exception of type %s was thrown." % e.__class__.__name__)
         if repeat < 3:
             repeat += 1
             time.sleep(1.1)
@@ -180,8 +194,8 @@ def oc_request(url, repeat=0):
     if response.status_code == 200:
         return response.json()
     else:
-        print("Request to URL", url, "failed!")
-        print("HTTP status code was", response.status_code)
+        logger.error("Request to URL %s failed!" % url)
+        logger.error("HTTP status code was %s." % response.status_code)
         if repeat < 3:
             repeat += 1
             time.sleep(1.1)
@@ -239,6 +253,8 @@ def outpath(pattern):
 
 
 def main():
+    start = timer()
+    logger.info("Fetch works of journal with ISSN 2150-8097!")
     works = get_works_from_journal("2150-8097")
     if not os.path.exists("public/data"):
         os.makedirs("public/data")
@@ -261,6 +277,7 @@ def main():
                           for ref_doi in reference_dois[doi] or []]
     reference_doi_list.sort()
     store_json_pretty(reference_doi_list, outpath("_dois-reference"))
+    logger.info("Fetch works cited in works of journal with ISSN 2150-8097!")
     reference_works = get_works(reference_doi_list)
     store_json(reference_works, outpath("_works-reference"))
     reference_issns = get_issns_from_works(reference_works)
@@ -278,6 +295,7 @@ def main():
                          for cit_doi in citation_dois[doi] or []]
     citation_doi_list.sort()
     store_json_pretty(citation_doi_list, outpath("_dois-citation"))
+    logger.info("Fetch works citing works of journal with ISSN 2150-8097!")
     citation_works = get_works(citation_doi_list)
     store_json(citation_works, outpath("_works-citation"))
     citation_issns = get_issns_from_works(citation_works)
@@ -287,6 +305,9 @@ def main():
     citation_year_types = get_types_per_year(citation_works)
     store_json_pretty(citation_year_types,
                       outpath("_works-citation_year-types"))
+    end = timer()
+    logger.info("All done!")
+    logger.info("Took {0} (h:m:s)".format(timedelta(seconds=end - start)))
 
 
 if __name__ == '__main__':
