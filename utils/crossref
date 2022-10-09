@@ -20,7 +20,10 @@ You should have received a copy of the GNU General Public License
 along with herreio/pvldb. If not, see <https://www.gnu.org/licenses/>.
 """
 import os
+import time
 import json
+import tqdm
+import requests
 from habanero import Crossref
 
 
@@ -34,10 +37,10 @@ def store_json_pretty(obj, path):
         json.dump(obj, f, indent=2)
 
 
-def get_works():
+def get_works_from_journal(issn):
     cr = Crossref(mailto="bibliometrie@slub-dresden.de")
     works = []
-    response = cr.works(filter={"issn": "2150-8097"},
+    response = cr.works(filter={"issn": issn},
                         cursor="*", cursor_max=100000, sort="indexed",
                         order="desc", limit=100, progress_bar=True)
     for batch in response:
@@ -47,10 +50,28 @@ def get_works():
     return works
 
 
+def get_works(dois):
+    cr = Crossref(mailto="bibliometrie@slub-dresden.de")
+    works = []
+    for doi in tqdm.tqdm(dois):
+        response = cr.works(ids=[doi], warn=True)
+        if isinstance(response, dict) and "status" in response \
+                and response["status"] == "ok":
+            works.append(response["message"])
+    return works
+
+
 def get_dois(works):
     dois = [item["DOI"] for item in works]
     dois.sort()
     return dois
+
+
+def get_issns(works):
+    issns = [issn for item in works if "ISSN" in item for issn in item["ISSN"]]
+    issns = list(set(issns))
+    issns.sort()
+    return issns
 
 
 def get_dois_of_articles(works):
@@ -59,7 +80,13 @@ def get_dois_of_articles(works):
     return dois
 
 
-def get_dois_from_references(works):
+def get_dois_of_issues(works):
+    dois = [item["DOI"] for item in works if item["type"] == "journal-issue"]
+    dois.sort()
+    return dois
+
+
+def get_dois_from_works_references(works):
     mapping = {}
     for item in works:
         doi = item["DOI"]
@@ -70,6 +97,16 @@ def get_dois_from_references(works):
                     mapping[doi].append(ref["DOI"])
         else:
             mapping[doi] = None
+    mapping = dict(sorted(mapping.items()))
+    return mapping
+
+
+def get_issns_from_works(works):
+    mapping = {}
+    for item in works:
+        doi = item["DOI"]
+        issns = item["ISSN"] if "ISSN" in item else None
+        mapping[doi] = issns
     mapping = dict(sorted(mapping.items()))
     return mapping
 
@@ -94,34 +131,136 @@ def get_types_per_year(works):
     return mapping
 
 
+def citations_url(doi):
+    return "https://w3id.org/oc/index/coci/api/v1/citations/%s" % doi
+
+
+def citations_count_url(doi):
+    return "https://w3id.org/oc/index/coci/api/v1/citation-count/%s" % doi
+
+
+def oc_request(url, repeat=0):
+    headers = None
+    if "OPENCITATIONS_ACCESS_TOKEN" in os.environ:
+        headers = {"Authorization": os.environ["OPENCITATIONS_ACCESS_TOKEN"]}
+    try:
+        response = requests.get(url, headers=headers)
+    except Exception as e:
+        print("Request to URL", url, "failed!")
+        print("Exception of type", e.__class__.__name__, "was thrown!")
+        if repeat < 3:
+            repeat += 1
+            time.sleep(1.1)
+            return oc_request(url, repeat)
+        return None
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print("Request to URL", url, "failed!")
+        print("HTTP status code was", response.status_code)
+        if repeat < 3:
+            repeat += 1
+            time.sleep(1.1)
+            return oc_request(url, repeat)
+        return None
+
+
+def citations_request(doi):
+    url = citations_url(doi)
+    return oc_request(url)
+
+
+def citations_count_request(doi):
+    url = citations_count_url(doi)
+    response = oc_request(url)
+    if isinstance(response, list) and len(response) > 0:
+        if isinstance(response[0], dict) and "count" in response[0]:
+            return int(response[0]["count"])
+
+
+def fetch_citations(dois):
+    mapping = {}
+    for doi in tqdm.tqdm(dois):
+        citations = citations_request(doi)
+        if isinstance(citations, list):
+            mapping[doi] = []
+            for citation in citations:
+                if isinstance(citation, dict) and "citing" in citation:
+                    mapping[doi].append(citation["citing"])
+        else:
+            mapping[doi] = None
+        time.sleep(0.55)
+    for doi in mapping.keys():
+        if isinstance(mapping[doi], list):
+            mapping[doi].sort()
+    mapping = dict(sorted(mapping.items()))
+    return mapping
+
+
+def fetch_citations_count(dois):
+    mapping = {}
+    for doi in tqdm.tqdm(dois):
+        citation_count = citations_count_request(doi)
+        if isinstance(citation_count, int):
+            mapping[doi] = citation_count
+        else:
+            mapping[doi] = 0
+        time.sleep(0.55)
+    mapping = dict(sorted(mapping.items()))
+    return mapping
+
+
+def outpath(pattern):
+    return "public/data/crossref_works_filter-issn-2150-8097%s.json" % pattern
+
+
 def main():
-    works = get_works()
+    works = get_works_from_journal("2150-8097")
     if not os.path.exists("public/data"):
         os.makedirs("public/data")
-    store_json(
-        works,
-        "public/data/crossref_works_filter-issn-2150-8097.json"
-        )
-    doi_list = get_dois(works)
-    store_json_pretty(
-        doi_list,
-        "public/data/crossref_works_filter-issn-2150-8097_dois.json"
-        )
-    article_doi_list = get_dois_of_articles(works)
-    store_json_pretty(
-        article_doi_list,
-        "public/data/crossref_works_filter-issn-2150-8097_dois_article.json"
-        )
-    reference_dois = get_dois_from_references(works)
-    store_json_pretty(
-        reference_dois,
-        "public/data/crossref_works_filter-issn-2150-8097_reference-dois.json"
-        )
+    store_json(works, outpath(""))
     year_types = get_types_per_year(works)
-    store_json_pretty(
-        year_types,
-        "public/data/crossref_works_filter-issn-2150-8097_year-types.json"
-        )
+    store_json_pretty(year_types, outpath("_year-types"))
+    issn_list = get_issns(works)
+    store_json_pretty(issn_list, outpath("_issns"))
+    doi_list = get_dois(works)
+    store_json_pretty(doi_list, outpath("_dois"))
+    issue_doi_list = get_dois_of_issues(works)
+    store_json_pretty(issue_doi_list, outpath("_dois-issue"))
+    article_doi_list = get_dois_of_articles(works)
+    store_json_pretty(article_doi_list, outpath("_dois-article"))
+    reference_dois = get_dois_from_works_references(works)
+    store_json_pretty(reference_dois, outpath("_reference"))
+    reference_doi_list = [ref_doi for doi in reference_dois
+                          for ref_doi in reference_dois[doi] or []]
+    reference_doi_list.sort()
+    store_json_pretty(reference_doi_list, outpath("_dois-reference"))
+    reference_works = get_works(reference_doi_list)
+    store_json(reference_works, outpath("_works-reference"))
+    reference_issns = get_issns_from_works(reference_works)
+    store_json_pretty(reference_issns, outpath("_works-reference_issns"))
+    reference_issn_list = get_issns(reference_works)
+    store_json_pretty(reference_issn_list, outpath("_issns-works-reference"))
+    reference_year_types = get_types_per_year(reference_works)
+    store_json_pretty(reference_year_types,
+                      outpath("_works-reference_year-types"))
+    citation_dois = fetch_citations(doi_list)
+    store_json_pretty(citation_dois, outpath("_citation"))
+    citation_count = {doi: len(citation_dois[doi] or []) for doi in citation_dois}
+    store_json_pretty(citation_count, outpath("_citation-count"))
+    citation_doi_list = [cit_doi for doi in citation_dois
+                         for cit_doi in citation_dois[doi] or []]
+    citation_doi_list.sort()
+    store_json_pretty(citation_doi_list, outpath("_dois-citation"))
+    citation_works = get_works(citation_doi_list)
+    store_json(citation_works, outpath("_works-citation"))
+    citation_issns = get_issns_from_works(citation_works)
+    store_json_pretty(citation_issns, outpath("_works-citation_issns"))
+    citation_issn_list = get_issns(citation_works)
+    store_json_pretty(citation_issn_list, outpath("_issns-works-citation"))
+    citation_year_types = get_types_per_year(citation_works)
+    store_json_pretty(citation_year_types,
+                      outpath("_works-citation_year-types"))
 
 
 if __name__ == '__main__':
