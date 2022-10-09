@@ -27,6 +27,7 @@ knitr::opts_knit$set(root.dir = "..")
 ```{r functions}
 mbsize <- function(path) format(round(file.info(path)$size/1000000, 2), nsmall=2)
 kbsize <- function(path) format(round(file.info(path)$size/1000, 2), nsmall=2)
+bsize <- function(path) file.info(path)$size
 ```
 
 Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages)
@@ -93,7 +94,7 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 - Crossref
   - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097.json")` MB]
-    - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_prefixes.json")` KB]
+    - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, `r bsize("public/data/crossref_works_filter-issn-2150-8097_prefixes.json")` B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_dois.json")` KB]
     - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_dois-article.json")` KB]
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_reference.json")` MB]
