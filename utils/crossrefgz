@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+##
+## herreio/pvldb -- Bibliometric Analysis of PVLDB
+## Copyright (c) 2022 SLUB Dresden
+##
+## This file is part of herreio/pvldb.
+##
+## herreio/pvldb is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## herreio/pvldb is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+## See the GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with herreio/pvldb. If not, see <https://www.gnu.org/licenses/>.
+##
+cd public/data
+paths=(
+  "crossref_works_filter-issn-2150-8097_works-citation.json"
+  "crossref_works_filter-issn-2150-8097_works-reference.json"
+)
+for i in ${paths[@]}; do
+  if [ -f $i ]; then
+    gzip $i
+  fi
+done
+cd ../..
