@@ -6,7 +6,9 @@ Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [bu
 
 ### Requirements
 
-- Unix-like OS
+- Unix-like OS (tested on Ubuntu 20.04)
+- Git (tested with Version 2.37)
+- cURL (tested with Version 7.68)
 - R (tested with Version 4.2)
 - Python (tested with Version 3.10)
 
