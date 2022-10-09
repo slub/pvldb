@@ -67,6 +67,13 @@ def get_dois(works):
     return dois
 
 
+def get_prefixes(works):
+    prefixes = [item["prefix"] for item in works]
+    prefixes = list(set(prefixes))
+    prefixes.sort()
+    return prefixes
+
+
 def get_issns(works):
     issns = [issn for item in works if "ISSN" in item for issn in item["ISSN"]]
     issns = list(set(issns))
@@ -223,6 +230,8 @@ def main():
     store_json_pretty(year_types, outpath("_year-types"))
     issn_list = get_issns(works)
     store_json_pretty(issn_list, outpath("_issns"))
+    prefix_list = get_prefixes(works)
+    store_json_pretty(prefix_list, outpath("_prefixes"))
     doi_list = get_dois(works)
     store_json_pretty(doi_list, outpath("_dois"))
     issue_doi_list = get_dois_of_issues(works)
