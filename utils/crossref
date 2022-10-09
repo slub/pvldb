@@ -287,6 +287,11 @@ def main():
     store_json_pretty(article_doi_list, outpath("_dois-article"))
     reference_dois = get_dois_from_works_references(works)
     store_json_pretty(reference_dois, outpath("_reference"))
+    reference_count = {doi: len(reference_dois[doi] or [])
+                       for doi in reference_dois}
+    reference_count = dict(sorted(reference_count.items(),
+                                  key=lambda item: item[1], reverse=True))
+    store_json_pretty(reference_count, outpath("_reference-count"))
     reference_doi_list = [ref_doi for doi in reference_dois
                           for ref_doi in reference_dois[doi] or []]
     reference_doi_list.sort()
@@ -308,6 +313,8 @@ def main():
     store_json_pretty(citation_dois, outpath("_citation"))
     citation_count = {doi: len(citation_dois[doi] or [])
                       for doi in citation_dois}
+    citation_count = dict(sorted(citation_count.items(),
+                                 key=lambda item: item[1], reverse=True))
     store_json_pretty(citation_count, outpath("_citation-count"))
     citation_doi_list = [cit_doi for doi in citation_dois
                          for cit_doi in citation_dois[doi] or []]
