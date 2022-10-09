@@ -9,6 +9,7 @@ Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [bu
 - Unix-like OS (tested on Ubuntu 20.04)
 - Git (tested with version 2.37)
 - cURL (tested with version 7.68)
+- gzip (tested with version 1.10)
 - R (tested with version 4.2)
 - Python (tested with version 3.10)
 
