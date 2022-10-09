@@ -150,6 +150,19 @@ def get_issns_from_works(works):
     return mapping
 
 
+def get_issns_stats(works):
+    issns = []
+    for item in works:
+        if "ISSN" in item:
+            for issn in item["ISSN"]:
+                issns.append(issn)
+    stats = {}
+    for value in list(set(issns)):
+        stats[value] = issns.count(value)
+    stats = dict(sorted(stats.items(), key=lambda item: item[1], reverse=True))
+    return stats
+
+
 def get_types_per_year(works):
     mapping = {}
     for item in works:
@@ -283,6 +296,8 @@ def main():
     store_json(reference_works, outpath("_works-reference"))
     reference_issns = get_issns_from_works(reference_works)
     store_json_pretty(reference_issns, outpath("_works-reference_issns"))
+    reference_issn_stats = get_issns_stats(reference_works)
+    store_json_pretty(reference_issn_stats, outpath("_issns-stats-works-reference"))
     reference_issn_list = get_issns(reference_works)
     store_json_pretty(reference_issn_list, outpath("_issns-works-reference"))
     reference_year_types = get_types_per_year(reference_works)
@@ -301,6 +316,8 @@ def main():
     store_json(citation_works, outpath("_works-citation"))
     citation_issns = get_issns_from_works(citation_works)
     store_json_pretty(citation_issns, outpath("_works-citation_issns"))
+    citation_issn_stats = get_issns_stats(citation_works)
+    store_json_pretty(citation_issn_stats, outpath("_issns-stats-works-citation"))
     citation_issn_list = get_issns(citation_works)
     store_json_pretty(citation_issn_list, outpath("_issns-works-citation"))
     citation_year_types = get_types_per_year(citation_works)
