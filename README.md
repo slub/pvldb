@@ -7,10 +7,10 @@ Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [bu
 ### Requirements
 
 - Unix-like OS (tested on Ubuntu 20.04)
-- Git (tested with Version 2.37)
-- cURL (tested with Version 7.68)
-- R (tested with Version 4.2)
-- Python (tested with Version 3.10)
+- Git (tested with version 2.37)
+- cURL (tested with version 7.68)
+- R (tested with version 4.2)
+- Python (tested with version 3.10)
 
 ### Set up
 
