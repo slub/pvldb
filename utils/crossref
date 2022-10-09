@@ -297,7 +297,8 @@ def main():
     reference_issns = get_issns_from_works(reference_works)
     store_json_pretty(reference_issns, outpath("_works-reference_issns"))
     reference_issn_stats = get_issns_stats(reference_works)
-    store_json_pretty(reference_issn_stats, outpath("_issns-stats-works-reference"))
+    store_json_pretty(reference_issn_stats,
+                      outpath("_issns-stats-works-reference"))
     reference_issn_list = get_issns(reference_works)
     store_json_pretty(reference_issn_list, outpath("_issns-works-reference"))
     reference_year_types = get_types_per_year(reference_works)
@@ -305,7 +306,8 @@ def main():
                       outpath("_works-reference_year-types"))
     citation_dois = fetch_citations(doi_list)
     store_json_pretty(citation_dois, outpath("_citation"))
-    citation_count = {doi: len(citation_dois[doi] or []) for doi in citation_dois}
+    citation_count = {doi: len(citation_dois[doi] or [])
+                      for doi in citation_dois}
     store_json_pretty(citation_count, outpath("_citation-count"))
     citation_doi_list = [cit_doi for doi in citation_dois
                          for cit_doi in citation_dois[doi] or []]
@@ -317,7 +319,8 @@ def main():
     citation_issns = get_issns_from_works(citation_works)
     store_json_pretty(citation_issns, outpath("_works-citation_issns"))
     citation_issn_stats = get_issns_stats(citation_works)
-    store_json_pretty(citation_issn_stats, outpath("_issns-stats-works-citation"))
+    store_json_pretty(citation_issn_stats,
+                      outpath("_issns-stats-works-citation"))
     citation_issn_list = get_issns(citation_works)
     store_json_pretty(citation_issn_list, outpath("_issns-works-citation"))
     citation_year_types = get_types_per_year(citation_works)
