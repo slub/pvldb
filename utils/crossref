@@ -53,6 +53,12 @@ def get_dois(works):
     return dois
 
 
+def get_dois_of_articles(works):
+    dois = [item["DOI"] for item in works if item["type"] == "journal-article"]
+    dois.sort()
+    return dois
+
+
 def get_dois_from_references(works):
     mapping = {}
     for item in works:
@@ -100,6 +106,11 @@ def main():
     store_json_pretty(
         doi_list,
         "public/data/crossref_works_filter-issn-2150-8097_dois.json"
+        )
+    article_doi_list = get_dois_of_articles(works)
+    store_json_pretty(
+        article_doi_list,
+        "public/data/crossref_works_filter-issn-2150-8097_dois_article.json"
         )
     reference_dois = get_dois_from_references(works)
     store_json_pretty(
