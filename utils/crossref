@@ -50,6 +50,15 @@ def get_works_from_journal(issn):
     return works
 
 
+def doi_tracker(doi):
+    doi_url = "https://doi.org/%s" % doi
+    response = requests.get(doi_url, allow_redirects=False)
+    if response.status_code == 301 and "Location" in response.headers:
+        location = response.headers["Location"]
+        if location.startswith("https://doi.org/"):
+            return location.replace("https://doi.org/", "")
+
+
 def get_works(dois):
     cr = Crossref(mailto="bibliometrie@slub-dresden.de")
     works = []
@@ -58,6 +67,14 @@ def get_works(dois):
         if isinstance(response, dict) and "status" in response \
                 and response["status"] == "ok":
             works.append(response["message"])
+        elif response is None:
+            new_doi = doi_tracker(doi)
+            if new_doi is not None:
+                print("Change of DOI", doi, "to new DOI", new_doi, "detected!")
+                response = cr.works(ids=[new_doi], warn=True)
+                if isinstance(response, dict) and "status" in response \
+                        and response["status"] == "ok":
+                    works.append(response["message"])
     return works
 
 
