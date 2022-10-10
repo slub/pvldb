@@ -24,18 +24,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+      # - uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.10'
 
-      - name: Python requirements
-        run: pip install -r requirements.txt
+      # - name: Python requirements
+      #   run: pip install -r requirements.txt
 
-      - name: Retrieve data via Crossref
-        run: utils/crossref
+      # - name: Retrieve data via Crossref
+      #   run: utils/crossref
 
-      - name: Compress data from Crossref
-        run: utils/crossrefgz
+      # - name: Compress data from Crossref
+      #   run: utils/crossrefgz
+
+      - name: Create public directory
+        run: mkdir -p public
+
+      - name: Move data to public directory
+        run: mv data public/
 
       - uses: r-lib/actions/setup-pandoc@v2
 

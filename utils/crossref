@@ -263,15 +263,15 @@ def fetch_citations_count(dois):
 
 
 def outpath(pattern):
-    return "public/data/crossref_works_filter-issn-2150-8097%s.json" % pattern
+    return "data/crossref_works_filter-issn-2150-8097%s.json" % pattern
 
 
 def main():
     start = timer()
     logger.info("Fetch works of journal with ISSN 2150-8097!")
     works = get_works_from_journal("2150-8097")
-    if not os.path.exists("public/data"):
-        os.makedirs("public/data")
+    if not os.path.exists("data"):
+        os.makedirs("data")
     store_json(works, outpath(""))
     year_types = get_types_per_year(works)
     store_json_pretty(year_types, outpath("_year-types"))

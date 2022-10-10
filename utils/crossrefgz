@@ -18,7 +18,7 @@
 ## You should have received a copy of the GNU General Public License
 ## along with herreio/pvldb. If not, see <https://www.gnu.org/licenses/>.
 ##
-cd public/data
+cd data
 paths=(
   "crossref_works_filter-issn-2150-8097_works-citation.json"
   "crossref_works_filter-issn-2150-8097_works-reference.json"
