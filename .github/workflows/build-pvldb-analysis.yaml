@@ -37,11 +37,8 @@ jobs:
       # - name: Compress data from Crossref
       #   run: utils/crossrefgz
 
-      - name: Create public directory
-        run: mkdir -p public
-
       - name: Move data to public directory
-        run: mv data public/
+        run: utils/data2public
 
       - uses: r-lib/actions/setup-pandoc@v2
 

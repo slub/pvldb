@@ -44,6 +44,7 @@ Rscript -e "renv::restore()"
 ```sh
 utils/crossref
 utils/crossrefgz
+utils/data2public
 utils/render
 utils/license
 ```
