@@ -126,26 +126,11 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [320](https://api.crossref.org/members/320?mailto=bibliometrie@slub-dresden.de)
     - [5777](https://api.crossref.org/members/5777?mailto=bibliometrie@slub-dresden.de)
   - prefixes
-    - [10.1145](https://api.crossref.org/prefixes/10.1145?mailto=bibliometrie@slub-dresden.de)
     - [10.14778](https://api.crossref.org/prefixes/10.14778?mailto=bibliometrie@slub-dresden.de)
   - journals
     - [2150-8097](https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de)
   - works
     - [filter=issn:2150-8097](https://api.crossref.org/works?filter=issn:2150-8097&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,has-abstract:true](https://api.crossref.org/works?filter=issn:2150-8097,has-abstract:true&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,has-references:true&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
-- [Crossref Event Data API](https://www.eventdata.crossref.org/)
-  - events
-    - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
-    - [subj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?subj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
-- [ISSN Portal LD Service](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/)
-  - resource/ISSN
-    - [2150-8097](https://portal.issn.org/resource/ISSN/2150-8097?format=json)
-  - resource/ISSN-L
-    - [2150-8097](https://portal.issn.org/resource/ISSN-L/2150-8097?format=json)
 - [JournalsDB API](https://api.journalsdb.org/apidocs/)
   - journals
     - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
@@ -159,9 +144,6 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
   - citation-count
-- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access)
-  - Linked Data Interface
-    - [Q27722874](https://www.wikidata.org/wiki/Special:EntityData/Q27722874.json)
 
 # Content Access
 
