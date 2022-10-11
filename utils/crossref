@@ -297,7 +297,7 @@ def main():
     store_json_pretty(issn_list, outpath("_issns"))
     prefix_list = get_prefixes(works)
     store_json_pretty(prefix_list, outpath("_prefixes"))
-    member_list = get_prefixes(works)
+    member_list = get_members(works)
     store_json_pretty(member_list, outpath("_members"))
     doi_list = get_dois(works)
     store_json_pretty(doi_list, outpath("_dois"))
