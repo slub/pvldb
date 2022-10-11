@@ -6,10 +6,12 @@ on:
       - main
     paths:
       - 'docs/**'
-      - 'utils/**'
+      - 'utils/data2public'
+      - 'utils/render'
+      - 'utils/license'
       - '.github/workflows/build-pvldb-analysis.yaml'
       - 'renv.lock'
-      - 'requirements.txt'
+      # - 'requirements.txt'
 
 name: build-pvldb-analysis
 
