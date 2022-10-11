@@ -95,6 +95,7 @@ def get_works(dois):
 
 def get_dois(works):
     dois = [item["DOI"] for item in works]
+    dois = list(set(dois))
     dois.sort()
     return dois
 
