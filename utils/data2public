@@ -19,4 +19,4 @@
 ## along with slub/pvldb. If not, see <https://www.gnu.org/licenses/>.
 ##
 mkdir -p public
-mv data public/
+cp -r data public/
