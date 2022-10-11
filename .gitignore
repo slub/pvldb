@@ -16,6 +16,9 @@ README.html
 
 *secret*
 
+crossref_works_filter-issn-2150-8097_works-citation.json*
+crossref_works_filter-issn-2150-8097_works-reference.json*
+
 # ---------------------------------------------------------------------------- #
 
 # the following derives from R.gitignore which can be found at:
