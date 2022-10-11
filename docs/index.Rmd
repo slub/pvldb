@@ -114,9 +114,9 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_issns-citation.json")` KB]
     - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-issns-citation.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-citation.json")` MB]
-- JournalsDB
+- JournalsDB (last updated: 2022-10-11)
   - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/journalsdb_journals_2150-8097.json")` KB]
-- OpenAlex
+- OpenAlex (last updated: 2022-10-11)
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, `r kbsize("public/data/openalex_journals_V4210226185.json")` KB]
 
 # Data Sources
