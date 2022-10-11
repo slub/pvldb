@@ -21,4 +21,4 @@
 mkdir -p data
 curl "https://api.crossref.org/journals/2150-8097?mailto=$CROSSREF_MAILTO" | jq . > data/crossref_journals_2150-8097.json
 curl "https://api.journalsdb.org/journals/2150-8097" | jq . > data/journalsdb_journals_2150-8097.json
-curl "https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de" | jq . > data/openalex_journals_V4210226185.json
+curl "https://api.openalex.org/journals/V4210226185?mailto=$OPENALEX_MAILTO" | jq . > data/openalex_journals_V4210226185.json
