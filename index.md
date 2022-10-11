@@ -4,7 +4,7 @@ author: "Donatus Herre"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-09"
+date: "2022-10-11"
 lang: "en-US"
 output:
   html_document:
@@ -61,9 +61,10 @@ Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https:
 
 - Crossref
   - [works](./data/crossref_works_filter-issn-2150-8097.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
+    - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
-    - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois_article.json) [JSON, 100.42 KB]
-    - [reference-dois](./data/crossref_works_filter-issn-2150-8097_reference-dois.json) [JSON, 2.01 MB]
+    - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, 100.42 KB]
+    - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.01 MB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
 
 # Data Sources
@@ -104,6 +105,7 @@ Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https:
     - [filter=host_venue.id:V4210226185&group_by=publication_year](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=publication_year&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
+  - citation-count
 - [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access)
   - Linked Data Interface
     - [Q27722874](https://www.wikidata.org/wiki/Special:EntityData/Q27722874.json)
