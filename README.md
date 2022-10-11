@@ -12,6 +12,7 @@ Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [build
 - Git (tested with version 2.37)
 - cURL (tested with version 7.68)
 - gzip (tested with version 1.10)
+- jq (tested with version 1.6)
 - R (tested with version 4.2)
 - Python (tested with version 3.10)
 
@@ -44,6 +45,7 @@ Rscript -e "renv::restore()"
 ```sh
 utils/crossref
 utils/crossrefgz
+utils/requesturl
 utils/data2public
 utils/render
 utils/license
