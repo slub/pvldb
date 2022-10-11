@@ -40,6 +40,15 @@ Rscript renv/activate.R
 Rscript -e "renv::restore()"
 ```
 
+#### Environment
+
+```sh
+export CROSSREF_MAILTO="humans@institution.org"
+export OPENCITATIONS_ACCESS_TOKEN="YOUR_OC_ACCESS_TOKEN"
+```
+
+For further details, see the documentation of the [Crossref polite pool](https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service) and the [OpenCitations access token](https://opencitations.net/accesstoken).
+
 ### Create build
 
 ```sh
