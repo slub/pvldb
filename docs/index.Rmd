@@ -101,7 +101,7 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_citation.json")` MB]
     - [citation-count](./data/crossref_works_filter-issn-2150-8097_citation-count.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_citation-count.json")` KB]
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_reference.json")` MB]
-    - [reference-count](./data/crossref_works_filter-issn-2150-8097_citation-count.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_reference-count.json")` KB]
+    - [reference-count](./data/crossref_works_filter-issn-2150-8097_reference-count.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_reference-count.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_year-types.json")` KB]
   - reference: cited works
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_dois-reference.json")` MB]
