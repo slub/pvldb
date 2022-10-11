@@ -1,0 +1,241 @@
+{
+  "id": "AQQV6ySopv48yocnEK8vxF",
+  "issn_l": "2150-8097",
+  "issns": [
+    "2150-8097"
+  ],
+  "title": "Proceedings of the VLDB Endowment",
+  "publisher": "VLDB Endowment",
+  "previous_issn_ls": [],
+  "other_titles": [],
+  "journal_metadata": [],
+  "total_dois": 3462,
+  "dois_by_issued_year": [
+    [
+      2022,
+      258
+    ],
+    [
+      2021,
+      338
+    ],
+    [
+      2020,
+      316
+    ],
+    [
+      2019,
+      239
+    ],
+    [
+      2018,
+      230
+    ],
+    [
+      2017,
+      222
+    ],
+    [
+      2016,
+      197
+    ],
+    [
+      2015,
+      237
+    ],
+    [
+      2014,
+      244
+    ],
+    [
+      2013,
+      254
+    ],
+    [
+      2012,
+      197
+    ],
+    [
+      2011,
+      191
+    ],
+    [
+      2010,
+      199
+    ],
+    [
+      2009,
+      169
+    ],
+    [
+      2008,
+      171
+    ]
+  ],
+  "sample_dois": [
+    "https://doi.org/10.14778/3415478.3415562",
+    "https://doi.org/10.14778/2732269.2732274",
+    "https://doi.org/10.14778/1687627.1687702"
+  ],
+  "subscription_pricing": {
+    "prices": [],
+    "mini_bundles": [],
+    "provenance": null
+  },
+  "apc_pricing": {
+    "apc_prices": [],
+    "apc_metadata": null,
+    "provenance": null
+  },
+  "open_access": {
+    "bronze_rate": 0,
+    "gold_rate": 0,
+    "green_rate": 0.2091503267973856,
+    "hybrid_rate": 0.0032679738562091,
+    "is_gold_journal": false,
+    "is_in_doaj": false,
+    "num_bronze": 0,
+    "num_dois": 306,
+    "num_gold": 0,
+    "num_green": 64,
+    "num_hybrid": 1,
+    "num_open": 65,
+    "open_rate": 0.2124183006535947,
+    "year": 2021
+  },
+  "date_last_doi": "2021-01-01",
+  "status": "publishing",
+  "status_as_of": "2021-04-12",
+  "open_access_history": "https://api.journalsdb.org/journals/2150-8097/open-access",
+  "repositories": "https://api.journalsdb.org/journals/2150-8097/repositories",
+  "citations": null,
+  "readership": [
+    {
+      "month": "October",
+      "year": "2020",
+      "requests": 55
+    },
+    {
+      "month": "November",
+      "year": "2020",
+      "requests": 61
+    },
+    {
+      "month": "December",
+      "year": "2020",
+      "requests": 33
+    },
+    {
+      "month": "January",
+      "year": "2021",
+      "requests": 186
+    },
+    {
+      "month": "February",
+      "year": "2021",
+      "requests": 182
+    },
+    {
+      "month": "March",
+      "year": "2021",
+      "requests": 231
+    },
+    {
+      "month": "April",
+      "year": "2021",
+      "requests": 208
+    },
+    {
+      "month": "July",
+      "year": "2020",
+      "requests": 27
+    },
+    {
+      "month": "August",
+      "year": "2020",
+      "requests": 25
+    },
+    {
+      "month": "May",
+      "year": "2021",
+      "requests": 158
+    },
+    {
+      "month": "September",
+      "year": "2020",
+      "requests": 44
+    },
+    {
+      "month": "March",
+      "year": "2020",
+      "requests": 26
+    },
+    {
+      "month": "April",
+      "year": "2020",
+      "requests": 21
+    },
+    {
+      "month": "May",
+      "year": "2020",
+      "requests": 20
+    },
+    {
+      "month": "June",
+      "year": "2020",
+      "requests": 38
+    },
+    {
+      "month": "June",
+      "year": "2021",
+      "requests": 158
+    },
+    {
+      "month": "July",
+      "year": "2021",
+      "requests": 170
+    },
+    {
+      "month": "August",
+      "year": "2021",
+      "requests": 184
+    },
+    {
+      "month": "September",
+      "year": "2021",
+      "requests": 222
+    },
+    {
+      "month": "October",
+      "year": "2021",
+      "requests": 189
+    },
+    {
+      "month": "November",
+      "year": "2021",
+      "requests": 1307
+    },
+    {
+      "month": "December",
+      "year": "2021",
+      "requests": 597
+    },
+    {
+      "month": "January",
+      "year": "2022",
+      "requests": 419
+    },
+    {
+      "month": "February",
+      "year": "2022",
+      "requests": 435
+    },
+    {
+      "month": "March",
+      "year": "2022",
+      "requests": 186
+    }
+  ],
+  "author_permissions": null,
+  "retractions": null
+}
