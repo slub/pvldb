@@ -36,17 +36,14 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 ```{r crossref-raw-data}
 cr_journal <- jsonlite::read_json("data/crossref_journals_2150-8097.json")
-# cr_journal <- jsonlite::read_json("https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de")
 ```
 
 ```{r journalsdb-raw-data}
 jdb_journal <- jsonlite::read_json("data/journalsdb_journals_2150-8097.json")
-# jdb_journal <- jsonlite::read_json("https://api.journalsdb.org/journals/2150-8097")
 ```
 
 ```{r openalex-raw-data}
 oa_venue <- jsonlite::read_json("data/openalex_journals_V4210226185.json")
-# oa_venue <- jsonlite::read_json("https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de")
 ```
 
 ## Works
