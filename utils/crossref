@@ -144,7 +144,7 @@ def get_issns_from_works(works):
     mapping = {}
     for item in works:
         doi = item["DOI"]
-        issns = item["ISSN"] if "ISSN" in item else None
+        issns = list(set(item["ISSN"])) if "ISSN" in item else None
         mapping[doi] = issns
     mapping = dict(sorted(mapping.items()))
     return mapping
@@ -154,8 +154,7 @@ def get_issns_stats(works):
     issns = []
     for item in works:
         if "ISSN" in item:
-            for issn in item["ISSN"]:
-                issns.append(issn)
+            issns.extend(list(set(item["ISSN"])))
     stats = {}
     for value in list(set(issns)):
         stats[value] = issns.count(value)
