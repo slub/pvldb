@@ -23,7 +23,7 @@ output:
 
 
 
-Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages)
+Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://github.com/slub/pvldb/tree/gh-pages)
 
 # Count Data
 
