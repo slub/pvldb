@@ -49,8 +49,17 @@ def store_json_pretty(obj, path):
         json.dump(obj, f, indent=2)
 
 
-def get_works_from_journal(issn):
-    cr = Crossref(mailto="bibliometrie@slub-dresden.de")
+def get_client(mailto=None):
+    if mailto is None:
+        if "CROSSREF_MAILTO" in os.environ:
+            mailto = os.environ["CROSSREF_MAILTO"]
+        else:
+            logger.warning("Unable to enter polite pool!")
+    return Crossref(mailto=mailto)
+
+
+def get_works_from_journal(issn, mailto=None):
+    cr = get_client(mailto=mailto)
     works = []
     response = cr.works(filter={"issn": issn},
                         cursor="*", cursor_max=100000, sort="indexed",
@@ -71,8 +80,8 @@ def doi_tracker(doi):
             return location.replace("https://doi.org/", "")
 
 
-def get_works(dois):
-    cr = Crossref(mailto="bibliometrie@slub-dresden.de")
+def get_works(dois, mailto=None):
+    cr = get_client(mailto=mailto)
     works = []
     with logging_redirect_tqdm():
         for doi in tqdm.tqdm(dois):
