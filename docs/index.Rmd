@@ -94,7 +94,7 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 - Crossref (last updated: 2022-10-11)
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, `r bsize("public/data/crossref_prefixes_10-14778.json")` B]
-  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, `r kbsize("public/data/crossref_members_5777.json")` KB]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, `r kbsize("public/data/crossref_members_5777.json")` KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, `r kbsize("public/data/crossref_members_320.json")` KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/crossref_journals_2150-8097.json")` KB]
   - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_works.json")` MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, `r bsize("public/data/crossref_works_filter-issn-2150-8097_prefixes.json")` B]
