@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'
+      - 'data/**'
       - 'utils/data2public'
       - 'utils/render'
       - 'utils/license'
