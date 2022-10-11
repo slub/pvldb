@@ -2,7 +2,7 @@
 
 *Under Construction*
 
-Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [build](https://herreio.github.io/pvldb/) for results. The build files can be found on the [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages) branch.
+Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [build](https://slub.github.io/pvldb/) for results. The build files can be found on the [gh-pages](https://github.com/slub/pvldb/tree/gh-pages) branch.
 
 ## Development
 
@@ -20,7 +20,7 @@ Powered by [actions](https://github.com/herreio/pvldb/actions) workflow. See [bu
 #### Repository
 
 ```sh
-git clone git@github.com:herreio/pvldb.git
+git clone git@github.com:slub/pvldb.git
 cd pvldb
 ```
 
@@ -53,5 +53,5 @@ utils/license
 - License: [GPL3](./LICENSE)
 - Copyright Holder: [SLUB Dresden](https://www.slub-dresden.de)
 - Author + Maintainer: [Donatus Herre](https://orcid.org/0000-0003-4335-2535)
-- Bug Tracker: [GitHub](https://github.com/herreio/pvldb/issues)
+- Bug Tracker: [GitHub](https://github.com/slub/pvldb/issues)
 - Contact: [bibliometrie@slub-dresden.de](mailto:bibliometrie@slub-dresden.de)

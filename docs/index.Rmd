@@ -30,7 +30,7 @@ kbsize <- function(path) format(round(file.info(path)$size/1000, 2), nsmall=2)
 bsize <- function(path) file.info(path)$size
 ```
 
-Branches: [main](https://github.com/herreio/pvldb/tree/main) / [gh-pages](https://github.com/herreio/pvldb/tree/gh-pages)
+Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://github.com/slub/pvldb/tree/gh-pages)
 
 # Count Data
 
