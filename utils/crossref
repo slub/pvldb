@@ -116,6 +116,13 @@ def get_prefixes(works):
     return prefixes
 
 
+def get_members(works):
+    members = [item["member"] for item in works]
+    members = list(set(members))
+    members.sort()
+    return members
+
+
 def get_issns(works):
     issns = [issn for item in works if "ISSN" in item for issn in item["ISSN"]]
     issns = list(set(issns))
@@ -290,6 +297,8 @@ def main():
     store_json_pretty(issn_list, outpath("_issns"))
     prefix_list = get_prefixes(works)
     store_json_pretty(prefix_list, outpath("_prefixes"))
+    member_list = get_prefixes(works)
+    store_json_pretty(member_list, outpath("_members"))
     doi_list = get_dois(works)
     store_json_pretty(doi_list, outpath("_dois"))
     issue_doi_list = get_dois_of_issues(works)
