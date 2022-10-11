@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "message-type": "prefix",
+  "message-version": "1.0.0",
+  "message": {
+    "member": "http://id.crossref.org/member/5777",
+    "name": "VLDB Endowment",
+    "prefix": "http://id.crossref.org/prefix/10.14778"
+  }
+}
