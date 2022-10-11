@@ -54,7 +54,7 @@ def get_client(mailto=None):
         if "CROSSREF_MAILTO" in os.environ:
             mailto = os.environ["CROSSREF_MAILTO"]
         else:
-            logger.warning("Unable to enter polite pool!")
+            logger.warning("Unable to enter Crossref's polite pool!")
     return Crossref(mailto=mailto)
 
 
@@ -204,6 +204,8 @@ def oc_request(url, repeat=0):
     headers = None
     if "OPENCITATIONS_ACCESS_TOKEN" in os.environ:
         headers = {"Authorization": os.environ["OPENCITATIONS_ACCESS_TOKEN"]}
+    else:
+        logger.warning("Unable to find access token for OpenCitations!")
     try:
         response = requests.get(url, headers=headers)
     except Exception as e:
