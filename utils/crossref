@@ -271,7 +271,7 @@ def main():
     works = get_works_from_journal("2150-8097")
     if not os.path.exists("data"):
         os.makedirs("data")
-    store_json(works, outpath(""))
+    store_json(works, outpath("_works"))
     year_types = get_types_per_year(works)
     store_json_pretty(year_types, outpath("_year-types"))
     issn_list = get_issns(works)
@@ -290,7 +290,7 @@ def main():
                        for doi in reference_dois}
     reference_count = dict(sorted(reference_count.items(),
                                   key=lambda item: item[1], reverse=True))
-    store_json_pretty(reference_count, outpath("_reference-count"))
+    store_json_pretty(reference_count, outpath("_count-reference"))
     reference_doi_list = [ref_doi for doi in reference_dois
                           for ref_doi in reference_dois[doi] or []]
     reference_doi_list.sort()
@@ -302,19 +302,19 @@ def main():
     store_json_pretty(reference_issns, outpath("_works-reference_issns"))
     reference_issn_stats = get_issns_stats(reference_works)
     store_json_pretty(reference_issn_stats,
-                      outpath("_issns-stats-works-reference"))
+                      outpath("_count-issns-reference"))
     reference_issn_list = get_issns(reference_works)
-    store_json_pretty(reference_issn_list, outpath("_issns-works-reference"))
+    store_json_pretty(reference_issn_list, outpath("_issns-reference"))
     reference_year_types = get_types_per_year(reference_works)
     store_json_pretty(reference_year_types,
-                      outpath("_works-reference_year-types"))
+                      outpath("_year-types-reference"))
     citation_dois = fetch_citations(doi_list)
     store_json_pretty(citation_dois, outpath("_citation"))
     citation_count = {doi: len(citation_dois[doi] or [])
                       for doi in citation_dois}
     citation_count = dict(sorted(citation_count.items(),
                                  key=lambda item: item[1], reverse=True))
-    store_json_pretty(citation_count, outpath("_citation-count"))
+    store_json_pretty(citation_count, outpath("_count-citation"))
     citation_doi_list = [cit_doi for doi in citation_dois
                          for cit_doi in citation_dois[doi] or []]
     citation_doi_list.sort()
@@ -326,12 +326,12 @@ def main():
     store_json_pretty(citation_issns, outpath("_works-citation_issns"))
     citation_issn_stats = get_issns_stats(citation_works)
     store_json_pretty(citation_issn_stats,
-                      outpath("_issns-stats-works-citation"))
+                      outpath("_count-issns-citation"))
     citation_issn_list = get_issns(citation_works)
-    store_json_pretty(citation_issn_list, outpath("_issns-works-citation"))
+    store_json_pretty(citation_issn_list, outpath("_issns-citation"))
     citation_year_types = get_types_per_year(citation_works)
     store_json_pretty(citation_year_types,
-                      outpath("_works-citation_year-types"))
+                      outpath("_year-types-citation"))
     end = timer()
     logger.info("All done!")
     logger.info("Took {0} (h:m:s)".format(timedelta(seconds=end - start)))
