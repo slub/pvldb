@@ -20,12 +20,12 @@
 ##
 cd data
 paths=(
-  "crossref_works_filter-issn-2150-8097_works-citation.json"
-  "crossref_works_filter-issn-2150-8097_works-reference.json"
+  "crossref_works_filter-issn-2150-8097_works-citation.json.gz"
+  "crossref_works_filter-issn-2150-8097_works-reference.json.gz"
 )
 for i in ${paths[@]}; do
   if [ -f $i ]; then
-    gzip -k $i
+    gunzip -k $i
   fi
 done
 cd ../..
