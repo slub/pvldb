@@ -3,7 +3,7 @@
   "message-type": "journal",
   "message-version": "1.0.0",
   "message": {
-    "last-status-check-time": 1665386371296,
+    "last-status-check-time": 1665580460788,
     "counts": {
       "current-dois": 919,
       "backfile-dois": 2550,
@@ -103,13 +103,21 @@
     "title": "Proceedings of the VLDB Endowment",
     "subjects": [
       {
-        "ASJC": 2700,
-        "name": "General Medicine"
+        "ASJC": 1900,
+        "name": "General Earth and Planetary Sciences"
+      },
+      {
+        "ASJC": 2312,
+        "name": "Water Science and Technology"
+      },
+      {
+        "ASJC": 3305,
+        "name": "Geography, Planning and Development"
       }
     ],
     "coverage-type": {
       "all": {
-        "last-status-check-time": 1665386371296,
+        "last-status-check-time": 1665580460788,
         "affiliations": 0.957048140674546,
         "abstracts": 0.7420005765350245,
         "orcids": 0.0002882675122513693,
@@ -124,7 +132,7 @@
         "descriptions": 0
       },
       "backfile": {
-        "last-status-check-time": 1665386371296,
+        "last-status-check-time": 1665580460788,
         "affiliations": 0.9419607843137255,
         "abstracts": 0.7141176470588235,
         "orcids": 0,
@@ -139,7 +147,7 @@
         "descriptions": 0
       },
       "current": {
-        "last-status-check-time": 1665386371296,
+        "last-status-check-time": 1665580460788,
         "affiliations": 0.998911860718172,
         "abstracts": 0.8193688792165397,
         "orcids": 0.001088139281828074,
