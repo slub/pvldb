@@ -312,8 +312,8 @@ def main():
     reference_count = dict(sorted(reference_count.items(),
                                   key=lambda item: item[1], reverse=True))
     store_json_pretty(reference_count, outpath("_count-reference"))
-    reference_doi_list = [ref_doi for doi in reference_dois
-                          for ref_doi in reference_dois[doi] or []]
+    reference_doi_list = list(set([ref_doi for doi in reference_dois
+                                   for ref_doi in reference_dois[doi] or []]))
     reference_doi_list.sort()
     store_json_pretty(reference_doi_list, outpath("_dois-reference"))
     logger.info("Fetch works cited in works of journal with ISSN 2150-8097!")
@@ -336,8 +336,8 @@ def main():
     citation_count = dict(sorted(citation_count.items(),
                                  key=lambda item: item[1], reverse=True))
     store_json_pretty(citation_count, outpath("_count-citation"))
-    citation_doi_list = [cit_doi for doi in citation_dois
-                         for cit_doi in citation_dois[doi] or []]
+    citation_doi_list = list(set([cit_doi for doi in citation_dois
+                                  for cit_doi in citation_dois[doi] or []]))
     citation_doi_list.sort()
     store_json_pretty(citation_doi_list, outpath("_dois-citation"))
     logger.info("Fetch works citing works of journal with ISSN 2150-8097!")
