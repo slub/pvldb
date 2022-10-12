@@ -2,7 +2,7 @@
 
 *Under Construction*
 
-Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [build](https://slub.github.io/pvldb/) for results. The build files can be found on the [gh-pages](https://github.com/slub/pvldb/tree/gh-pages) branch.
+Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [report](https://slub.github.io/pvldb/) for results. The report files can be found on the [gh-pages](https://github.com/slub/pvldb/tree/gh-pages) branch.
 
 ## Development
 
@@ -50,7 +50,7 @@ export OPENCITATIONS_ACCESS_TOKEN="YOUR_OC_ACCESS_TOKEN"
 
 For further details, see the documentation of the [Crossref polite pool](https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service), the [OpenAlex polite pool](https://docs.openalex.org/api#the-polite-pool) and the [OpenCitations access token](https://opencitations.net/accesstoken).
 
-### Create build
+### Create report
 
 ```sh
 utils/crossref
