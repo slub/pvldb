@@ -55,7 +55,7 @@ For further details, see the documentation of the [Crossref polite pool](https:/
 ```sh
 utils/crossref
 utils/crossrefgz
-utils/requesturl
+utils/urlrequest
 utils/data2public
 utils/render
 utils/license
