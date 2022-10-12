@@ -1,6 +1,6 @@
 ---
 title: "PVLDB"
-author: "Donatus Herre"
+author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
