@@ -62,7 +62,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 - Crossref (last updated: 2022-10-11)
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 236 B]
   - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 6.21 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 23.36 KB]
-  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.95 KB]
+  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 5.14 KB]
   - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
     - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, 21 B]
@@ -70,16 +70,16 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
     - [dois-issue](./data/crossref_works_filter-issn-2150-8097_dois-issue.json) [JSON, 2.66 KB]
     - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, 100.42 KB]
     - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, 2.70 MB] (via OpenCitations)
-      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 2.42 MB]
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 1.28 MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 43.98 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.50 KB]
-      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.92 MB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.29 KB]
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.00 MB]
     - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 115.19 KB] (via OpenCitations)
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.01 MB]
-      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 1.76 MB]
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 0.80 MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.12 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.96 KB]
-      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 1.36 MB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.83 KB]
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.59 MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
 - JournalsDB (last updated: 2022-10-11)

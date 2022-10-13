@@ -7,7 +7,7 @@
   "display_name": "Proceedings of the VLDB Endowment",
   "publisher": "VLDB Endowment",
   "works_count": 3354,
-  "cited_by_count": 119910,
+  "cited_by_count": 119880,
   "is_oa": false,
   "is_in_doaj": false,
   "homepage_url": null,
@@ -24,21 +24,21 @@
       "wikidata": "https://www.wikidata.org/wiki/Q21198",
       "display_name": "Computer science",
       "level": 0,
-      "score": 97.5
+      "score": 97.4
     },
     {
       "id": "https://openalex.org/C33923547",
       "wikidata": "https://www.wikidata.org/wiki/Q395",
       "display_name": "Mathematics",
       "level": 0,
-      "score": 64.6
+      "score": 64.5
     },
     {
       "id": "https://openalex.org/C111919701",
       "wikidata": "https://www.wikidata.org/wiki/Q9135",
       "display_name": "Operating system",
       "level": 1,
-      "score": 61.9
+      "score": 61.8
     },
     {
       "id": "https://openalex.org/C199360897",
@@ -73,7 +73,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q11660",
       "display_name": "Artificial intelligence",
       "level": 1,
-      "score": 45.6
+      "score": 45.5
     },
     {
       "id": "https://openalex.org/C23123220",
@@ -115,21 +115,21 @@
       "wikidata": "https://www.wikidata.org/wiki/Q420",
       "display_name": "Biology",
       "level": 0,
-      "score": 26.3
+      "score": 26.2
     },
     {
       "id": "https://openalex.org/C121332964",
       "wikidata": "https://www.wikidata.org/wiki/Q413",
       "display_name": "Physics",
       "level": 0,
-      "score": 26.2
+      "score": 26.1
     },
     {
       "id": "https://openalex.org/C162324750",
       "wikidata": "https://www.wikidata.org/wiki/Q8134",
       "display_name": "Economics",
       "level": 0,
-      "score": 25.7
+      "score": 25.8
     },
     {
       "id": "https://openalex.org/C114614502",
@@ -143,7 +143,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q2539",
       "display_name": "Machine learning",
       "level": 1,
-      "score": 25
+      "score": 24.9
     },
     {
       "id": "https://openalex.org/C138885662",
@@ -164,17 +164,17 @@
     {
       "year": 2022,
       "works_count": 96,
-      "cited_by_count": 7511
+      "cited_by_count": 7536
     },
     {
       "year": 2021,
       "works_count": 342,
-      "cited_by_count": 13694
+      "cited_by_count": 13699
     },
     {
       "year": 2020,
       "works_count": 329,
-      "cited_by_count": 13728
+      "cited_by_count": 13723
     },
     {
       "year": 2019,
@@ -184,40 +184,40 @@
     {
       "year": 2018,
       "works_count": 235,
-      "cited_by_count": 12353
+      "cited_by_count": 12361
     },
     {
       "year": 2017,
       "works_count": 226,
-      "cited_by_count": 10738
+      "cited_by_count": 10729
     },
     {
       "year": 2016,
       "works_count": 201,
-      "cited_by_count": 10762
+      "cited_by_count": 10763
     },
     {
       "year": 2015,
       "works_count": 240,
-      "cited_by_count": 10406
+      "cited_by_count": 10401
     },
     {
       "year": 2014,
       "works_count": 244,
-      "cited_by_count": 8424
+      "cited_by_count": 8423
     },
     {
       "year": 2013,
       "works_count": 254,
-      "cited_by_count": 6514
+      "cited_by_count": 6512
     },
     {
       "year": 2012,
       "works_count": 198,
-      "cited_by_count": 4983
+      "cited_by_count": 4984
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2022-10-11T09:47:44.191086",
+  "updated_date": "2022-10-12T14:55:59.848932",
   "created_date": "2022-02-03"
 }
