@@ -1,0 +1,242 @@
+{
+  "status": "ok",
+  "message-type": "member",
+  "message-version": "1.0.0",
+  "message": {
+    "last-status-check-time": 1665478177058,
+    "primary-name": "VLDB Endowment",
+    "counts": {
+      "current-dois": 661,
+      "backfile-dois": 2523,
+      "total-dois": 3184
+    },
+    "breakdowns": {
+      "dois-by-issued-year": [
+        [
+          2021,
+          345
+        ],
+        [
+          2020,
+          316
+        ],
+        [
+          2013,
+          254
+        ],
+        [
+          2014,
+          244
+        ],
+        [
+          2015,
+          237
+        ],
+        [
+          2019,
+          231
+        ],
+        [
+          2018,
+          222
+        ],
+        [
+          2017,
+          212
+        ],
+        [
+          2010,
+          199
+        ],
+        [
+          2012,
+          197
+        ],
+        [
+          2016,
+          196
+        ],
+        [
+          2011,
+          191
+        ],
+        [
+          2008,
+          171
+        ],
+        [
+          2009,
+          169
+        ]
+      ]
+    },
+    "prefixes": [
+      "10.14778"
+    ],
+    "coverage": {
+      "affiliations-current": 0.9984871406959153,
+      "similarity-checking-current": 0.9924357034795764,
+      "descriptions-current": 0,
+      "ror-ids-current": 0,
+      "funders-backfile": 0,
+      "licenses-backfile": 0,
+      "funders-current": 0,
+      "affiliations-backfile": 0.9413396749900912,
+      "resource-links-backfile": 0,
+      "orcids-backfile": 0,
+      "update-policies-current": 0,
+      "ror-ids-backfile": 0,
+      "orcids-current": 0.00151285930408472,
+      "similarity-checking-backfile": 0.9405469678953627,
+      "references-backfile": 0.9306381292112564,
+      "descriptions-backfile": 0,
+      "award-numbers-backfile": 0,
+      "update-policies-backfile": 0,
+      "licenses-current": 0,
+      "award-numbers-current": 0,
+      "abstracts-backfile": 0.7126436781609194,
+      "resource-links-current": 0,
+      "abstracts-current": 0.7488653555219364,
+      "references-current": 0.9909228441754917
+    },
+    "prefix": [
+      {
+        "name": "VLDB Endowment",
+        "value": "10.14778"
+      }
+    ],
+    "id": 5777,
+    "tokens": [
+      "vldb",
+      "endowment"
+    ],
+    "counts-type": {
+      "all": {
+        "journal-article": 3063,
+        "journal-issue": 121
+      },
+      "backfile": {
+        "journal-article": 2402,
+        "journal-issue": 121
+      },
+      "current": {
+        "journal-article": 661
+      }
+    },
+    "coverage-type": {
+      "all": {
+        "journal-article": {
+          "last-status-check-time": 1665478177058,
+          "affiliations": 0.9908586353248449,
+          "abstracts": 0.7486124714332354,
+          "orcids": 0.000326477309826967,
+          "licenses": 0,
+          "references": 0.980411361410382,
+          "funders": 0,
+          "similarity-checking": 0.9888997714658831,
+          "award-numbers": 0,
+          "ror-ids": 0,
+          "update-policies": 0,
+          "resource-links": 0,
+          "descriptions": 0
+        },
+        "journal-issue": {
+          "last-status-check-time": 1665478177058,
+          "affiliations": 0,
+          "abstracts": 0,
+          "orcids": 0,
+          "licenses": 0,
+          "references": 0,
+          "funders": 0,
+          "similarity-checking": 0,
+          "award-numbers": 0,
+          "ror-ids": 0,
+          "update-policies": 0,
+          "resource-links": 0,
+          "descriptions": 0
+        }
+      },
+      "backfile": {
+        "journal-article": {
+          "last-status-check-time": 1665478177058,
+          "affiliations": 0.988759367194005,
+          "abstracts": 0.7485428809325562,
+          "orcids": 0,
+          "licenses": 0,
+          "references": 0.97751873438801,
+          "funders": 0,
+          "similarity-checking": 0.9879267277268943,
+          "award-numbers": 0,
+          "ror-ids": 0,
+          "update-policies": 0,
+          "resource-links": 0,
+          "descriptions": 0
+        },
+        "journal-issue": {
+          "last-status-check-time": 1665478177058,
+          "affiliations": 0,
+          "abstracts": 0,
+          "orcids": 0,
+          "licenses": 0,
+          "references": 0,
+          "funders": 0,
+          "similarity-checking": 0,
+          "award-numbers": 0,
+          "ror-ids": 0,
+          "update-policies": 0,
+          "resource-links": 0,
+          "descriptions": 0
+        }
+      },
+      "current": {
+        "journal-article": {
+          "last-status-check-time": 1665478177058,
+          "affiliations": 0.9984871406959153,
+          "abstracts": 0.7488653555219364,
+          "orcids": 0.00151285930408472,
+          "licenses": 0,
+          "references": 0.9909228441754917,
+          "funders": 0,
+          "similarity-checking": 0.9924357034795764,
+          "award-numbers": 0,
+          "ror-ids": 0,
+          "update-policies": 0,
+          "resource-links": 0,
+          "descriptions": 0
+        }
+      }
+    },
+    "flags": {
+      "deposits-abstracts-current": true,
+      "deposits-orcids-current": true,
+      "deposits": true,
+      "deposits-affiliations-backfile": true,
+      "deposits-update-policies-backfile": false,
+      "deposits-similarity-checking-backfile": true,
+      "deposits-award-numbers-current": false,
+      "deposits-resource-links-current": false,
+      "deposits-ror-ids-current": false,
+      "deposits-articles": true,
+      "deposits-affiliations-current": true,
+      "deposits-funders-current": false,
+      "deposits-references-backfile": true,
+      "deposits-ror-ids-backfile": false,
+      "deposits-abstracts-backfile": true,
+      "deposits-licenses-backfile": false,
+      "deposits-award-numbers-backfile": false,
+      "deposits-descriptions-current": false,
+      "deposits-references-current": true,
+      "deposits-resource-links-backfile": false,
+      "deposits-descriptions-backfile": false,
+      "deposits-orcids-backfile": false,
+      "deposits-funders-backfile": false,
+      "deposits-update-policies-current": false,
+      "deposits-similarity-checking-current": true,
+      "deposits-licenses-current": false
+    },
+    "location": "United States",
+    "names": [
+      "VLDB Endowment"
+    ]
+  }
+}

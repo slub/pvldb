@@ -1,10 +1,10 @@
 ---
 title: "PVLDB"
-author: "Donatus Herre"
+author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-11"
+date: "2022-10-13"
 lang: "en-US"
 output:
   html_document:
@@ -60,30 +60,31 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 # Raw Data
 
 - Crossref (last updated: 2022-10-11)
+  - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 236 B]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 6.21 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 23.36 KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.95 KB]
   - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
+    - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, 21 B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
     - [dois-issue](./data/crossref_works_filter-issn-2150-8097_dois-issue.json) [JSON, 2.66 KB]
     - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, 100.42 KB]
-    - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, 2.70 MB]
-    - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 115.19 KB]
+    - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, 2.70 MB] (via OpenCitations)
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 2.42 MB]
+      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 43.98 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.50 KB]
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.92 MB]
+    - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 115.19 KB] (via OpenCitations)
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.01 MB]
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 1.76 MB]
+      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.12 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.96 KB]
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 1.36 MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
-  - reference: cited works
-    - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 1.76 MB]
-    - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.12 KB]
-    - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.96 KB]
-    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 1.36 MB]
-  - citation: citing works
-    - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 2.42 MB]
-    - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 43.98 KB]
-    - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.50 KB]
-    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.92 MB]
-- JournalsDB
+- JournalsDB (last updated: 2022-10-11)
   - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, 3.96 KB]
-- OpenAlex
+- OpenAlex (last updated: 2022-10-11)
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.53 KB]
 
 # Data Sources
@@ -93,42 +94,21 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
     - [320](https://api.crossref.org/members/320?mailto=bibliometrie@slub-dresden.de)
     - [5777](https://api.crossref.org/members/5777?mailto=bibliometrie@slub-dresden.de)
   - prefixes
-    - [10.1145](https://api.crossref.org/prefixes/10.1145?mailto=bibliometrie@slub-dresden.de)
     - [10.14778](https://api.crossref.org/prefixes/10.14778?mailto=bibliometrie@slub-dresden.de)
   - journals
     - [2150-8097](https://api.crossref.org/journals/2150-8097?mailto=bibliometrie@slub-dresden.de)
   - works
     - [filter=issn:2150-8097](https://api.crossref.org/works?filter=issn:2150-8097&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,has-abstract:true](https://api.crossref.org/works?filter=issn:2150-8097,has-abstract:true&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,has-references:true&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
-    - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
-- [Crossref Event Data API](https://www.eventdata.crossref.org/)
-  - events
-    - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
-    - [subj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?subj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
-- [ISSN Portal LD Service](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/)
-  - resource/ISSN
-    - [2150-8097](https://portal.issn.org/resource/ISSN/2150-8097?format=json)
-  - resource/ISSN-L
-    - [2150-8097](https://portal.issn.org/resource/ISSN-L/2150-8097?format=json)
+- [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
+  - citations
 - [JournalsDB API](https://api.journalsdb.org/apidocs/)
   - journals
     - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
-    - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de) / [issn:2150-8097](https://api.openalex.org/journals/issn:2150-8097?mailto=bibliometrie@slub-dresden.de)
+    - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de)
   - works
     - [filter=host_venue.id:V4210226185](https://api.openalex.org/works?filter=host_venue.id:V4210226185&mailto=bibliometrie@slub-dresden.de)
-    - [filter=host_venue.id:V4210226185&group_by=type](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=type&mailto=bibliometrie@slub-dresden.de)
-    - [filter=host_venue.id:V4210226185&group_by=publication_year](https://api.openalex.org/works?filter=host_venue.id:V4210226185&group_by=publication_year&mailto=bibliometrie@slub-dresden.de)
-- [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
-  - citations
-  - citation-count
-- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access)
-  - Linked Data Interface
-    - [Q27722874](https://www.wikidata.org/wiki/Special:EntityData/Q27722874.json)
 
 # Content Access
 
