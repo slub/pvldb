@@ -92,7 +92,7 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 # Raw Data
 
-- Crossref (last updated: 2022-10-11)
+- Crossref (last updated: 2022-10-12)
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, `r bsize("public/data/crossref_prefixes_10-14778.json")` B]
   - [members](./data/crossref_members_5777.json) (`5777`) [JSON, `r kbsize("public/data/crossref_members_5777.json")` KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, `r kbsize("public/data/crossref_members_320.json")` KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/crossref_journals_2150-8097.json")` KB]
@@ -115,9 +115,9 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-reference.json")` MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-reference.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_year-types.json")` KB]
-- JournalsDB (last updated: 2022-10-11)
+- JournalsDB (last updated: 2022-10-12)
   - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/journalsdb_journals_2150-8097.json")` KB]
-- OpenAlex (last updated: 2022-10-11)
+- OpenAlex (last updated: 2022-10-12)
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, `r kbsize("public/data/openalex_journals_V4210226185.json")` KB]
 
 # Data Sources
