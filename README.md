@@ -54,7 +54,6 @@ For further details, see the documentation of the [Crossref polite pool](https:/
 
 ```sh
 utils/crossref
-utils/crossrefgz
 utils/urlrequest
 ```
 
