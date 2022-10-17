@@ -313,12 +313,15 @@ def oa_venue_title(issn, mailto=None):
 
 def oa_venue_enrichment(issn_stats, mailto=None):
     result = []
+    tracker = {}
     for k in tqdm.tqdm(issn_stats):
         venue = oa_venue_title(k, mailto=mailto)
         if isinstance(venue, tuple):
+            if venue[0] in tracker:
+                if issn_stats[k] <= issn_stats[tracker[venue[0]]]:
+                    continue
+            tracker[venue[0]] = k
             row = [venue[0], venue[1], venue[2], issn_stats[k]]
-            if row in result:
-                continue
             result.append(row)
         else:
             result.append(["", "", k, issn_stats[k]])
