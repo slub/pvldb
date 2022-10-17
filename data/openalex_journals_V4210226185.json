@@ -7,7 +7,7 @@
   "display_name": "Proceedings of the VLDB Endowment",
   "publisher": "VLDB Endowment",
   "works_count": 3354,
-  "cited_by_count": 119880,
+  "cited_by_count": 120003,
   "is_oa": false,
   "is_in_doaj": false,
   "homepage_url": null,
@@ -31,14 +31,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q395",
       "display_name": "Mathematics",
       "level": 0,
-      "score": 64.5
-    },
-    {
-      "id": "https://openalex.org/C111919701",
-      "wikidata": "https://www.wikidata.org/wiki/Q9135",
-      "display_name": "Operating system",
-      "level": 1,
-      "score": 61.8
+      "score": 64.3
     },
     {
       "id": "https://openalex.org/C199360897",
@@ -48,25 +41,32 @@
       "score": 61.5
     },
     {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 61.4
+    },
+    {
       "id": "https://openalex.org/C124101348",
       "wikidata": "https://www.wikidata.org/wiki/Q172491",
       "display_name": "Data mining",
       "level": 1,
-      "score": 54.6
+      "score": 54.1
     },
     {
       "id": "https://openalex.org/C77088390",
       "wikidata": "https://www.wikidata.org/wiki/Q8513",
       "display_name": "Database",
       "level": 1,
-      "score": 54.4
+      "score": 53.8
     },
     {
       "id": "https://openalex.org/C127413603",
       "wikidata": "https://www.wikidata.org/wiki/Q11023",
       "display_name": "Engineering",
       "level": 0,
-      "score": 47.1
+      "score": 46.9
     },
     {
       "id": "https://openalex.org/C154945302",
@@ -80,28 +80,28 @@
       "wikidata": "https://www.wikidata.org/wiki/Q816826",
       "display_name": "Information retrieval",
       "level": 1,
-      "score": 38.4
+      "score": 38.2
     },
     {
       "id": "https://openalex.org/C136764020",
       "wikidata": "https://www.wikidata.org/wiki/Q466",
       "display_name": "World Wide Web",
       "level": 1,
-      "score": 34.6
+      "score": 34.3
     },
     {
       "id": "https://openalex.org/C105795698",
       "wikidata": "https://www.wikidata.org/wiki/Q12483",
       "display_name": "Statistics",
       "level": 1,
-      "score": 29.4
+      "score": 29.3
     },
     {
       "id": "https://openalex.org/C80444323",
       "wikidata": "https://www.wikidata.org/wiki/Q2878974",
       "display_name": "Theoretical computer science",
       "level": 1,
-      "score": 28.1
+      "score": 27.9
     },
     {
       "id": "https://openalex.org/C11413529",
@@ -115,35 +115,35 @@
       "wikidata": "https://www.wikidata.org/wiki/Q420",
       "display_name": "Biology",
       "level": 0,
-      "score": 26.2
+      "score": 26.3
     },
     {
       "id": "https://openalex.org/C121332964",
       "wikidata": "https://www.wikidata.org/wiki/Q413",
       "display_name": "Physics",
       "level": 0,
-      "score": 26.1
+      "score": 26
     },
     {
       "id": "https://openalex.org/C162324750",
       "wikidata": "https://www.wikidata.org/wiki/Q8134",
       "display_name": "Economics",
       "level": 0,
-      "score": 25.8
+      "score": 25.7
     },
     {
       "id": "https://openalex.org/C114614502",
       "wikidata": "https://www.wikidata.org/wiki/Q76592",
       "display_name": "Combinatorics",
       "level": 1,
-      "score": 25.3
+      "score": 25.1
     },
     {
       "id": "https://openalex.org/C119857082",
       "wikidata": "https://www.wikidata.org/wiki/Q2539",
       "display_name": "Machine learning",
       "level": 1,
-      "score": 24.9
+      "score": 24.7
     },
     {
       "id": "https://openalex.org/C138885662",
@@ -157,67 +157,67 @@
       "wikidata": "https://www.wikidata.org/wiki/Q121416",
       "display_name": "Discrete mathematics",
       "level": 1,
-      "score": 20.7
+      "score": 20.6
     }
   ],
   "counts_by_year": [
     {
       "year": 2022,
       "works_count": 96,
-      "cited_by_count": 7536
+      "cited_by_count": 7811
     },
     {
       "year": 2021,
-      "works_count": 342,
-      "cited_by_count": 13699
+      "works_count": 345,
+      "cited_by_count": 13674
     },
     {
       "year": 2020,
       "works_count": 329,
-      "cited_by_count": 13723
+      "cited_by_count": 13673
     },
     {
       "year": 2019,
       "works_count": 250,
-      "cited_by_count": 13495
+      "cited_by_count": 13479
     },
     {
       "year": 2018,
       "works_count": 235,
-      "cited_by_count": 12361
+      "cited_by_count": 12375
     },
     {
       "year": 2017,
       "works_count": 226,
-      "cited_by_count": 10729
+      "cited_by_count": 10734
     },
     {
       "year": 2016,
       "works_count": 201,
-      "cited_by_count": 10763
+      "cited_by_count": 10755
     },
     {
       "year": 2015,
       "works_count": 240,
-      "cited_by_count": 10401
+      "cited_by_count": 10403
     },
     {
       "year": 2014,
       "works_count": 244,
-      "cited_by_count": 8423
+      "cited_by_count": 8422
     },
     {
       "year": 2013,
       "works_count": 254,
-      "cited_by_count": 6512
+      "cited_by_count": 6509
     },
     {
       "year": 2012,
       "works_count": 198,
-      "cited_by_count": 4984
+      "cited_by_count": 4981
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2022-10-12T14:55:59.848932",
+  "updated_date": "2022-10-16T23:46:51.441272",
   "created_date": "2022-02-03"
 }

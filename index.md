@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-13"
+date: "2022-10-17"
 lang: "en-US"
 output:
   html_document:
@@ -59,11 +59,11 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 # Raw Data
 
-- Crossref (last updated: 2022-10-12)
-  - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 236 B]
-  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 6.21 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 23.36 KB]
-  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 5.14 KB]
-  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
+- Crossref (last update: 2022-10-17)
+  - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 135 B]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.65 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.47 KB]
+  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.47 KB]
+  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB] (last update: 2022-10-12)
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
     - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, 21 B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
@@ -82,9 +82,9 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.59 MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
-- JournalsDB (last updated: 2022-10-12)
+- JournalsDB (last update: 2022-10-17)
   - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, 3.96 KB]
-- OpenAlex (last updated: 2022-10-12)
+- OpenAlex (last update: 2022-10-17)
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.53 KB]
 
 # Data Sources
