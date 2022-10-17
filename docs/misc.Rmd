@@ -1,0 +1,69 @@
+---
+title: "PVLDB"
+author: "Donatus Herre (SLUB Dresden)"
+subtitle: "Bibliometric Analysis"
+pagetitle: "PVLDB :: Bibliometric Analysis"
+author-meta: "SLUB Dresden"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+lang: "en-US"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    mathjax: null
+    includes:
+      after_body: assets/html/target.html
+    keep_md: true
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = FALSE, error = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+```{r functions}
+mbsize <- function(path) format(round(file.info(path)$size/1000000, 2), nsmall=2)
+kbsize <- function(path) format(round(file.info(path)$size/1000, 2), nsmall=2)
+bsize <- function(path) file.info(path)$size
+```
+
+Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://github.com/slub/pvldb/tree/gh-pages)
+
+# Count Data
+
+```{r journalsdb-raw-data}
+jdb_journal <- jsonlite::read_json("data/journalsdb_journals_2150-8097.json")
+```
+
+## Works
+
+```{r journalsdb-works-count-data}
+jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_year, function(x) data.frame(year=x[[1]], count=as.integer(x[[2]]))))
+```
+
+```{r journalsdb-works-count-plot}
+ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jdb_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
+## Citations
+
+...
+
+# Raw Data
+
+- JournalsDB (last update: 2022-10-17)
+  - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/journalsdb_journals_2150-8097.json")` KB]
+
+# Data Sources
+
+- [JournalsDB API](https://api.journalsdb.org/apidocs/)
+  - journals
+    - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
+
+# Usage Terms
+
+[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [report](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE.txt).  
+[![Public Domain Dedication](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/) The [raw data](#raw-data) is made available under the [CC0 1.0 Universal Public Domain Dedication](./data/LICENSE.txt).

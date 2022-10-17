@@ -38,10 +38,6 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 cr_journal <- jsonlite::read_json("data/crossref_journals_2150-8097.json")
 ```
 
-```{r journalsdb-raw-data}
-jdb_journal <- jsonlite::read_json("data/journalsdb_journals_2150-8097.json")
-```
-
 ```{r openalex-raw-data}
 oa_venue <- jsonlite::read_json("data/openalex_journals_V4210226185.json")
 ```
@@ -54,14 +50,6 @@ cr_works_count_by_year <- do.call("rbind", lapply(cr_journal$breakdowns$`dois-by
 
 ```{r crossref-works-count-plot}
 ggplot2::ggplot(cr_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=cr_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (Crossref)") + ggplot2::xlab("") + ggplot2::ylab("")
-```
-
-```{r journalsdb-works-count-data}
-jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_year, function(x) data.frame(year=x[[1]], count=as.integer(x[[2]]))))
-```
-
-```{r journalsdb-works-count-plot}
-ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jdb_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
 ```{r openalex-works-count-data}
@@ -115,8 +103,6 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-reference.json")` MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-reference.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_year-types.json")` KB]
-- JournalsDB (last update: 2022-10-17)
-  - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/journalsdb_journals_2150-8097.json")` KB]
 - OpenAlex (last update: 2022-10-17)
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, `r kbsize("public/data/openalex_journals_V4210226185.json")` KB]
 
@@ -134,9 +120,6 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
     - [filter=issn:2150-8097](https://api.crossref.org/works?filter=issn:2150-8097&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
-- [JournalsDB API](https://api.journalsdb.org/apidocs/)
-  - journals
-    - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de)
@@ -154,5 +137,5 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 # Usage Terms
 
-[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [report](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE.txt).  
+[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [document](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE.txt).  
 [![Public Domain Dedication](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/) The [raw data](#raw-data) is made available under the [CC0 1.0 Universal Public Domain Dedication](./data/LICENSE.txt).
