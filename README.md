@@ -50,16 +50,30 @@ export OPENCITATIONS_ACCESS_TOKEN="YOUR_OC_ACCESS_TOKEN"
 
 For further details, see the documentation of the [Crossref polite pool](https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service), the [OpenAlex polite pool](https://docs.openalex.org/api#the-polite-pool) and the [OpenCitations access token](https://opencitations.net/accesstoken).
 
-### Create report
+### Retrieve data
 
 ```sh
 utils/crossref
 utils/crossrefgz
 utils/urlrequest
+```
+
+### Create report
+
+```sh
 utils/data2public
 utils/render
 utils/license
 ```
+
+### Browse results
+
+```sh
+cd public
+python3 -m http.server
+```
+
+Go to http://127.0.0.1:8000 ...
 
 ## Meta
 
