@@ -2,7 +2,7 @@
 title: "PVLDB"
 author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
-pagetitle: "PVLDB :: Bibliometric Analysis"
+pagetitle: "PVLDB :: Bibliometric Analysis :: Outtakes"
 author-meta: "SLUB Dresden"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 lang: "en-US"
@@ -48,9 +48,51 @@ jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_ye
 ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jdb_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
+```{r citescore-works-count-data}
+citescore_works_count <- data.frame(
+  year=c(2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021),
+  count=c(456, 705, 784, 767, 807, 750, 782, 756, 727, 800, 960)
+) # date-updated: 2022-05-30 (2021) 2021-11-09 (2011-2020)
+```
+
+```{r citescore-works-count-plot, eval=F}
+ggplot2::ggplot(citescore_works_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=citescore_works_count$year) + ggplot2::ggtitle("PVLDB Works (2021 CiteScore © Elsevier, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
+```{r scival-works-count-data}
+scival_works_count <- data.frame(
+  year=c(2017, 2018, 2019, 2020, 2021, 2022),
+  count=c(184, 404, 29, 342, 359, 207)
+) # date-updated: 2022-09-28
+```
+
+```{r scival-works-count-plot}
+ggplot2::ggplot(scival_works_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=scival_works_count$year) + ggplot2::ggtitle("PVLDB Works (2022-09-28 SciVal © Elsevier, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
 ## Citations
 
-...
+```{r citescore-citations-count-data}
+citescore_citation_count <- data.frame(
+  year=c(2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021),
+  count=c(3608, 4700, 5417, 5122, 6067, 6033, 6040, 5665, 5802, 5937, 6726)
+) # date-updated: 2022-05-30 (2021) 2021-11-09 (2011-2020)
+```
+
+```{r citescore-citations-count-plot, eval=F}
+ggplot2::ggplot(citescore_citation_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=citescore_citation_count$year) + ggplot2::ggtitle("PVLDB Citations (2021 CiteScore © Elsevier, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
+```{r scival-citations-count-data}
+scival_citation_count <- data.frame(
+  year=c(2017, 2018, 2019, 2020, 2021, 2022),
+  count=c(5317, 6581, 483, 3148, 813, 23)
+) # date-updated: 2022-09-28
+```
+
+```{r scival-citations-count-plot}
+ggplot2::ggplot(scival_citation_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=scival_citation_count$year) + ggplot2::ggtitle("PVLDB Citations (2022-09-28 SciVal © Elsevier, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
 
 # Raw Data
 
@@ -59,9 +101,35 @@ ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::g
 
 # Data Sources
 
+- [Crossref API](https://api.crossref.org)
+  - prefixes
+    - [10.1145](https://api.crossref.org/prefixes/10.1145?mailto=bibliometrie@slub-dresden.de)
+  - works
+    - [filter=issn:2150-8097,has-abstract:true](https://api.crossref.org/works?filter=issn:2150-8097,has-abstract:true&mailto=bibliometrie@slub-dresden.de)
+    - [filter=issn:2150-8097,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,has-references:true&mailto=bibliometrie@slub-dresden.de)
+    - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
+    - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
+    - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
+- [Crossref Event Data API](https://www.eventdata.crossref.org/)
+  - events
+    - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
+    - [subj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?subj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
+- [ISSN Portal LD Service](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/)
+  - resource/ISSN
+    - [2150-8097](https://portal.issn.org/resource/ISSN/2150-8097?format=json)
+  - resource/ISSN-L
+    - [2150-8097](https://portal.issn.org/resource/ISSN-L/2150-8097?format=json)
 - [JournalsDB API](https://api.journalsdb.org/apidocs/)
   - journals
     - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
+- [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access)
+  - Linked Data Interface
+    - [Q27722874](https://www.wikidata.org/wiki/Special:EntityData/Q27722874.json)
+- [SLUB LOD API](https://data.slub-dresden.de/)
+  - resource
+    - [591517426](https://data.slub-dresden.de/resources/591517426)
+  - source/kxp-de14
+    - [591517426](https://data.slub-dresden.de/source/kxp-de14/591517426)
 
 # Usage Terms
 

@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "`r format(Sys.time(), '%Y-%m-%d')`"
+date: "2022-10-17"
 lang: "en-US"
 output:
   html_document:
