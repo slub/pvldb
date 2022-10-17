@@ -312,13 +312,15 @@ def oa_venue_title(issn, mailto=None):
 
 
 def oa_venue_enrichment(issn_stats, mailto=None):
-    result = [["id", "display_name", "issn_l", "count"]]
+    result = []
     for k in tqdm.tqdm(issn_stats):
         venue = oa_venue_title(k, mailto=mailto)
         if isinstance(venue, tuple):
             result.append([venue[0], venue[1], venue[2], issn_stats[k]])
         else:
             result.append(["", "", k, issn_stats[k]])
+    result.sort(key=lambda x: x[3], reverse=True)
+    result.insert(0, ["id", "display_name", "issn_l", "count"])
     return result
 
 
