@@ -53,7 +53,7 @@ For further details, see the documentation of the [Crossref polite pool](https:/
 ### Retrieve data
 
 ```sh
-utils/crossref
+utils/crossref > data/crossref.log 2>&1
 utils/urlrequest
 ```
 
