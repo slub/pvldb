@@ -34,16 +34,16 @@
       "score": 64.3
     },
     {
-      "id": "https://openalex.org/C199360897",
-      "wikidata": "https://www.wikidata.org/wiki/Q9143",
-      "display_name": "Programming language",
-      "level": 1,
-      "score": 61.5
-    },
-    {
       "id": "https://openalex.org/C111919701",
       "wikidata": "https://www.wikidata.org/wiki/Q9135",
       "display_name": "Operating system",
+      "level": 1,
+      "score": 61.4
+    },
+    {
+      "id": "https://openalex.org/C199360897",
+      "wikidata": "https://www.wikidata.org/wiki/Q9143",
+      "display_name": "Programming language",
       "level": 1,
       "score": 61.4
     },
@@ -164,17 +164,17 @@
     {
       "year": 2022,
       "works_count": 96,
-      "cited_by_count": 7811
+      "cited_by_count": 7831
     },
     {
       "year": 2021,
       "works_count": 345,
-      "cited_by_count": 13674
+      "cited_by_count": 13664
     },
     {
       "year": 2020,
       "works_count": 329,
-      "cited_by_count": 13673
+      "cited_by_count": 13670
     },
     {
       "year": 2019,
@@ -184,12 +184,12 @@
     {
       "year": 2018,
       "works_count": 235,
-      "cited_by_count": 12375
+      "cited_by_count": 12374
     },
     {
       "year": 2017,
       "works_count": 226,
-      "cited_by_count": 10734
+      "cited_by_count": 10733
     },
     {
       "year": 2016,
@@ -204,7 +204,7 @@
     {
       "year": 2014,
       "works_count": 244,
-      "cited_by_count": 8422
+      "cited_by_count": 8421
     },
     {
       "year": 2013,
@@ -218,6 +218,6 @@
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2022-10-16T23:46:51.441272",
+  "updated_date": "2022-10-17T06:54:26.967082",
   "created_date": "2022-02-03"
 }
