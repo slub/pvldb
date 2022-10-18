@@ -67,12 +67,14 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
       - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 1.28 MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 43.98 KB]
       - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.29 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, 161.04 KB] (enriched via OpenAlex)
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.00 MB]
     - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 115.19 KB] (via OpenCitations)
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.01 MB]
       - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 0.80 MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.12 KB]
       - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.83 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.csv) [CSV, 119.47 KB] (enriched via OpenAlex)
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.59 MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
