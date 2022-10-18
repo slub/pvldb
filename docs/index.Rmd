@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-17"
+date: "2022-10-18"
 lang: "en-US"
 output:
   html_document:
@@ -80,11 +80,11 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
 
 # Raw Data
 
-- Crossref (last update: 2022-10-17)
+- Crossref
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, `r bsize("public/data/crossref_prefixes_10-14778.json")` B]
   - [members](./data/crossref_members_5777.json) (`5777`) [JSON, `r kbsize("public/data/crossref_members_5777.json")` KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, `r kbsize("public/data/crossref_members_320.json")` KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, `r kbsize("public/data/crossref_journals_2150-8097.json")` KB]
-  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_works.json")` MB] (last update: 2022-10-12)
+  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_works.json")` MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, `r bsize("public/data/crossref_works_filter-issn-2150-8097_prefixes.json")` B]
     - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, `r bsize("public/data/crossref_works_filter-issn-2150-8097_members.json")` B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_dois.json")` KB]
@@ -103,7 +103,7 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-reference.json")` MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-reference.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_year-types.json")` KB]
-- OpenAlex (last update: 2022-10-17)
+- OpenAlex
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, `r kbsize("public/data/openalex_journals_V4210226185.json")` KB]
 
 # Data Sources

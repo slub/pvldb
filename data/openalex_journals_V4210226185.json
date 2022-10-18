@@ -7,7 +7,7 @@
   "display_name": "Proceedings of the VLDB Endowment",
   "publisher": "VLDB Endowment",
   "works_count": 3354,
-  "cited_by_count": 120003,
+  "cited_by_count": 120089,
   "is_oa": false,
   "is_in_doaj": false,
   "homepage_url": null,
@@ -31,14 +31,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q395",
       "display_name": "Mathematics",
       "level": 0,
-      "score": 64.3
-    },
-    {
-      "id": "https://openalex.org/C111919701",
-      "wikidata": "https://www.wikidata.org/wiki/Q9135",
-      "display_name": "Operating system",
-      "level": 1,
-      "score": 61.4
+      "score": 64.2
     },
     {
       "id": "https://openalex.org/C199360897",
@@ -48,11 +41,18 @@
       "score": 61.4
     },
     {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 61.4
+    },
+    {
       "id": "https://openalex.org/C124101348",
       "wikidata": "https://www.wikidata.org/wiki/Q172491",
       "display_name": "Data mining",
       "level": 1,
-      "score": 54.1
+      "score": 54
     },
     {
       "id": "https://openalex.org/C77088390",
@@ -66,21 +66,21 @@
       "wikidata": "https://www.wikidata.org/wiki/Q11023",
       "display_name": "Engineering",
       "level": 0,
-      "score": 46.9
+      "score": 46.8
     },
     {
       "id": "https://openalex.org/C154945302",
       "wikidata": "https://www.wikidata.org/wiki/Q11660",
       "display_name": "Artificial intelligence",
       "level": 1,
-      "score": 45.5
+      "score": 45.3
     },
     {
       "id": "https://openalex.org/C23123220",
       "wikidata": "https://www.wikidata.org/wiki/Q816826",
       "display_name": "Information retrieval",
       "level": 1,
-      "score": 38.2
+      "score": 38.1
     },
     {
       "id": "https://openalex.org/C136764020",
@@ -94,14 +94,14 @@
       "wikidata": "https://www.wikidata.org/wiki/Q12483",
       "display_name": "Statistics",
       "level": 1,
-      "score": 29.3
+      "score": 29.2
     },
     {
       "id": "https://openalex.org/C80444323",
       "wikidata": "https://www.wikidata.org/wiki/Q2878974",
       "display_name": "Theoretical computer science",
       "level": 1,
-      "score": 27.9
+      "score": 27.8
     },
     {
       "id": "https://openalex.org/C11413529",
@@ -122,14 +122,14 @@
       "wikidata": "https://www.wikidata.org/wiki/Q413",
       "display_name": "Physics",
       "level": 0,
-      "score": 26
+      "score": 25.9
     },
     {
       "id": "https://openalex.org/C162324750",
       "wikidata": "https://www.wikidata.org/wiki/Q8134",
       "display_name": "Economics",
       "level": 0,
-      "score": 25.7
+      "score": 25.6
     },
     {
       "id": "https://openalex.org/C114614502",
@@ -150,7 +150,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q5891",
       "display_name": "Philosophy",
       "level": 0,
-      "score": 24.6
+      "score": 24.5
     },
     {
       "id": "https://openalex.org/C118615104",
@@ -164,27 +164,27 @@
     {
       "year": 2022,
       "works_count": 96,
-      "cited_by_count": 7831
+      "cited_by_count": 7833
     },
     {
       "year": 2021,
       "works_count": 345,
-      "cited_by_count": 13664
+      "cited_by_count": 13658
     },
     {
       "year": 2020,
       "works_count": 329,
-      "cited_by_count": 13670
+      "cited_by_count": 13665
     },
     {
       "year": 2019,
       "works_count": 250,
-      "cited_by_count": 13479
+      "cited_by_count": 13473
     },
     {
       "year": 2018,
       "works_count": 235,
-      "cited_by_count": 12374
+      "cited_by_count": 12375
     },
     {
       "year": 2017,
@@ -209,7 +209,7 @@
     {
       "year": 2013,
       "works_count": 254,
-      "cited_by_count": 6509
+      "cited_by_count": 6506
     },
     {
       "year": 2012,
@@ -218,6 +218,6 @@
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2022-10-17T06:54:26.967082",
+  "updated_date": "2022-10-17T14:32:53.026375",
   "created_date": "2022-02-03"
 }
