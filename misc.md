@@ -69,10 +69,27 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
     - [filter=issn:2150-8097&facet=type-name:*](https://api.crossref.org/works?filter=issn:2150-8097&facet=type-name:*&rows=0&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article&mailto=bibliometrie@slub-dresden.de)
     - [filter=issn:2150-8097,type:journal-article,has-references:true](https://api.crossref.org/works?filter=issn:2150-8097,type:journal-article,has-references:true&mailto=bibliometrie@slub-dresden.de)
+    - [filter=issn:2150-8097&select=DOI,is-referenced-by-count](https://api.crossref.org/works?filter=issn:2150-8097&select=DOI,is-referenced-by-count&mailto=bibliometrie@slub-dresden.de)
+- [Crossref OAI](https://oai.crossref.org/oai?verb=Identify)
+  - ListSets
+    - [set=J:10.14778](https://oai.crossref.org/oai?verb=ListSets&set=J:10.14778)
+- [Crossref Depositor Report](https://www.crossref.org/documentation/reports/depositor-report/)
+  - journals
+    - [pubid=J249417](https://data.crossref.org/depositorreport?pubid=J249417)
 - [Crossref Event Data API](https://www.eventdata.crossref.org/)
   - events
     - [obj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?obj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
     - [subj-id.prefix=10.14778](https://api.eventdata.crossref.org/v1/events?subj-id.prefix=10.14778&mailto=bibliometrie@slub-dresden.de)
+- [DataCite API](https://support.datacite.org/docs/api)
+  - dois
+    - [query=relatedIdentifiers.relatedIdentifier:10.14778*](https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:10.14778*)
+    - [query=relatedIdentifiers.relatedIdentifier:10.14778*&affiliation=true](https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:10.14778*&affiliation=true)
+    - [query=relatedIdentifiers.relatedIdentifier:10.14778*&affiliation=true&resource-type-id=dataset](https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:10.14778*&affiliation=true&resource-type-id=dataset)
+- [DBLP API](https://dblp.org/faq/13501473.html)
+  - search/publ/api
+    - [streams/journals/pvldb](https://dblp.org/search/publ/api?q=stream%3Astreams%2Fjournals%2Fpvldb%3A&h=1000&format=json)
+  - search/venue/api
+    - [q=Proceedings of the VLDB Endowment](https://dblp.org/search/venue/api?q=Proceedings%20of%20the%20VLDB%20Endowment&format=json)
 - [ISSN Portal LD Service](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/)
   - resource/ISSN
     - [2150-8097](https://portal.issn.org/resource/ISSN/2150-8097?format=json)
