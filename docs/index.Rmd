@@ -94,12 +94,14 @@ ggplot2::ggplot(jcr_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2
       - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_dois-citation.json")` MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_issns-citation.json")` KB]
       - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-issns-citation.json")` KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv")` KB] (enriched via OpenAlex)
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-citation.json")` MB]
     - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-citation.json")` KB] (via OpenCitations)
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_reference.json")` MB]
       - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_dois-reference.json")` MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_issns-reference.json")` KB]
       - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-issns-reference.json")` KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.csv) [CSV, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-issns-reference.csv")` KB] (enriched via OpenAlex)
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, `r mbsize("public/data/crossref_works_filter-issn-2150-8097_year-types-reference.json")` MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_count-reference.json")` KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, `r kbsize("public/data/crossref_works_filter-issn-2150-8097_year-types.json")` KB]
