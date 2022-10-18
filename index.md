@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-17"
+date: "2022-10-18"
 lang: "en-US"
 output:
   html_document:
@@ -31,17 +31,11 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 
 
-
-
 ## Works
 
 
 
 ![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/crossref-works-count-plot-1.png)<!-- -->
-
-
-
-![](/home/runner/work/pvldb/pvldb/public/index_files/figure-html/journalsdb-works-count-plot-1.png)<!-- -->
 
 
 
@@ -59,11 +53,11 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 # Raw Data
 
-- Crossref (last update: 2022-10-17)
+- Crossref
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 135 B]
   - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.65 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.47 KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.47 KB]
-  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB] (last update: 2022-10-12)
+  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
     - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, 21 B]
     - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
@@ -82,9 +76,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.59 MB]
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
-- JournalsDB (last update: 2022-10-17)
-  - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, 3.96 KB]
-- OpenAlex (last update: 2022-10-17)
+- OpenAlex
   - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.53 KB]
 
 # Data Sources
@@ -101,9 +93,6 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
     - [filter=issn:2150-8097](https://api.crossref.org/works?filter=issn:2150-8097&mailto=bibliometrie@slub-dresden.de)
 - [OpenCitations API](https://opencitations.net/index/coci/api/v1) (COCI)
   - citations
-- [JournalsDB API](https://api.journalsdb.org/apidocs/)
-  - journals
-    - [2150-8097](https://api.journalsdb.org/journals/2150-8097)
 - [OpenAlex API](https://docs.openalex.org/api)
   - venues
     - [V4210226185](https://api.openalex.org/journals/V4210226185?mailto=bibliometrie@slub-dresden.de)
@@ -121,5 +110,5 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 # Usage Terms
 
-[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [report](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE.txt).  
+[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/) This [document](#) is licensed under a [Creative Commons Attribution 4.0 International License](./LICENSE.txt).  
 [![Public Domain Dedication](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/) The [raw data](#raw-data) is made available under the [CC0 1.0 Universal Public Domain Dedication](./data/LICENSE.txt).
