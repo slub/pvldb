@@ -1,10 +1,10 @@
 {
-  "last-status-check-time": 1666049623923,
+  "last-status-check-time": 1666222388138,
   "primary-name": "Association for Computing Machinery (ACM)",
   "counts": {
-    "current-dois": 91037,
-    "backfile-dois": 482791,
-    "total-dois": 573828
+    "current-dois": 91395,
+    "backfile-dois": 482795,
+    "total-dois": 574190
   },
   "breakdowns": {
     "dois-by-issued-year": [
@@ -14,19 +14,19 @@
       ],
       [
         2019,
-        34385
+        34386
       ],
       [
         2020,
-        32484
+        32483
       ],
       [
         2018,
-        32469
+        32476
       ],
       [
         2017,
-        28523
+        28519
       ],
       [
         2016,
@@ -38,7 +38,7 @@
       ],
       [
         2022,
-        23668
+        24023
       ],
       [
         2014,
@@ -277,12 +277,12 @@
         124
       ],
       [
-        1952,
+        2023,
         77
       ],
       [
-        2023,
-        73
+        1952,
+        77
       ],
       [
         1955,
@@ -307,30 +307,30 @@
     "10.1145"
   ],
   "coverage": {
-    "affiliations-current": 0.9677603611718312,
-    "similarity-checking-current": 0.926326658391643,
+    "affiliations-current": 0.9677991137370753,
+    "similarity-checking-current": 0.9260353411018108,
     "descriptions-current": 0,
     "ror-ids-current": 0,
-    "funders-backfile": 0.1230905298566046,
-    "licenses-backfile": 0.2983630597919182,
-    "funders-current": 0.3799993409273153,
-    "affiliations-backfile": 0.4956741115720881,
-    "resource-links-backfile": 0.002034006433425644,
-    "orcids-backfile": 0.004310353755558824,
-    "update-policies-current": 0.0007249799532058394,
+    "funders-backfile": 0.1230915813129796,
+    "licenses-backfile": 0.2983626590996179,
+    "funders-current": 0.3805240986924886,
+    "affiliations-backfile": 0.4956741474124628,
+    "resource-links-backfile": 0.002033989581499394,
+    "orcids-backfile": 0.004310318043890264,
+    "update-policies-current": 0.0007221401608403086,
     "ror-ids-backfile": 0,
-    "orcids-current": 0.05070465854542658,
-    "similarity-checking-backfile": 0.9224550581928826,
-    "references-backfile": 0.4533369511859169,
+    "orcids-current": 0.05342743038459434,
+    "similarity-checking-backfile": 0.9224557006597003,
+    "references-backfile": 0.4533373377934734,
     "descriptions-backfile": 0,
-    "award-numbers-backfile": 0.1080591808877962,
-    "update-policies-backfile": 0.00053232143929775,
-    "licenses-current": 0.06455616946955633,
-    "award-numbers-current": 0.3479464393598207,
-    "abstracts-backfile": 0.1601189748773279,
-    "resource-links-current": 0.0007249799532058394,
-    "abstracts-current": 0.1467754868899458,
-    "references-current": 0.9293474081966673
+    "award-numbers-backfile": 0.1080603568802494,
+    "update-policies-backfile": 0.0005323170289667457,
+    "licenses-current": 0.06440177252584935,
+    "award-numbers-current": 0.3483341539471525,
+    "abstracts-backfile": 0.1601217908221916,
+    "resource-links-current": 0.0007221401608403086,
+    "abstracts-current": 0.1463209147108704,
+    "references-current": 0.9295147436949505
   },
   "prefix": [
     {
@@ -354,14 +354,14 @@
     "all": {
       "monograph": 35,
       "report": 5,
-      "journal-article": 131767,
+      "journal-article": 131780,
       "other": 734,
       "book": 51,
-      "proceedings-article": 422914,
+      "proceedings-article": 423254,
       "journal": 1,
       "component": 7,
       "book-chapter": 718,
-      "proceedings": 10358,
+      "proceedings": 10367,
       "reference-book": 1,
       "journal-issue": 6827,
       "dataset": 462
@@ -369,7 +369,7 @@
     "backfile": {
       "monograph": 21,
       "report": 4,
-      "journal-article": 117077,
+      "journal-article": 117081,
       "other": 638,
       "book": 42,
       "proceedings-article": 348745,
@@ -382,19 +382,19 @@
     "current": {
       "monograph": 14,
       "report": 1,
-      "journal-article": 14690,
+      "journal-article": 14699,
       "other": 96,
       "book": 9,
-      "proceedings-article": 74169,
+      "proceedings-article": 74509,
       "book-chapter": 199,
-      "proceedings": 1635,
+      "proceedings": 1644,
       "dataset": 224
     }
   },
   "coverage-type": {
     "all": {
       "monograph": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.4571428571428571,
         "abstracts": 0,
         "orcids": 0,
@@ -409,7 +409,7 @@
         "descriptions": 0
       },
       "report": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0.2,
         "orcids": 0,
@@ -424,22 +424,22 @@
         "descriptions": 0
       },
       "journal-article": {
-        "last-status-check-time": 1666049623923,
-        "affiliations": 0.8513133030273135,
-        "abstracts": 0.688070609484924,
-        "orcids": 0.0462710693876312,
-        "licenses": 0.1896529480067088,
-        "references": 0.7394719466937852,
-        "funders": 0.1541129417836029,
-        "similarity-checking": 0.9564610259017812,
-        "award-numbers": 0.1363619115560042,
+        "last-status-check-time": 1666222388138,
+        "affiliations": 0.8513279708605251,
+        "abstracts": 0.6881013810896949,
+        "orcids": 0.04729852784944605,
+        "licenses": 0.1896342388829868,
+        "references": 0.7394900591895583,
+        "funders": 0.1541736227045075,
+        "similarity-checking": 0.9564577325846108,
+        "award-numbers": 0.1364243436029747,
         "ror-ids": 0,
-        "update-policies": 0.002451296606889434,
-        "resource-links": 0.007953432953622682,
+        "update-policies": 0.002451054788283503,
+        "resource-links": 0.007952648353316133,
         "descriptions": 0
       },
       "other": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.1525885558583106,
         "abstracts": 0,
         "orcids": 0,
@@ -454,7 +454,7 @@
         "descriptions": 0
       },
       "book": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.0196078431372549,
         "abstracts": 0,
         "orcids": 0,
@@ -469,22 +469,22 @@
         "descriptions": 0
       },
       "proceedings-article": {
-        "last-status-check-time": 1666049623923,
-        "affiliations": 0.5085620244304989,
+        "last-status-check-time": 1666222388138,
+        "affiliations": 0.5089544339805412,
         "abstracts": 0,
-        "orcids": 0.001418728157497742,
-        "licenses": 0.2954123060480381,
-        "references": 0.486472427018259,
-        "funders": 0.1743002123363142,
-        "similarity-checking": 0.9525600949602047,
-        "award-numbers": 0.1557716225993937,
+        "orcids": 0.001727095313924972,
+        "licenses": 0.2951986277743388,
+        "references": 0.4868802184976397,
+        "funders": 0.1745736602607418,
+        "similarity-checking": 0.9524966096008542,
+        "award-numbers": 0.1560032510029439,
         "ror-ids": 0,
         "update-policies": 0,
         "resource-links": 0,
         "descriptions": 0
       },
       "journal": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -499,7 +499,7 @@
         "descriptions": 0
       },
       "component": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -514,7 +514,7 @@
         "descriptions": 1
       },
       "book-chapter": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.03760445682451253,
         "abstracts": 0,
         "orcids": 0,
@@ -529,14 +529,14 @@
         "descriptions": 0
       },
       "proceedings": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
         "licenses": 0,
         "references": 0,
         "funders": 0,
-        "similarity-checking": 0.01168179185170882,
+        "similarity-checking": 0.01167165042924665,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -544,7 +544,7 @@
         "descriptions": 0
       },
       "reference-book": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -559,7 +559,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -574,7 +574,7 @@
         "descriptions": 0
       },
       "dataset": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -591,7 +591,7 @@
     },
     "backfile": {
       "monograph": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.1904761904761905,
         "abstracts": 0,
         "orcids": 0,
@@ -606,7 +606,7 @@
         "descriptions": 0
       },
       "report": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -621,22 +621,22 @@
         "descriptions": 0
       },
       "journal-article": {
-        "last-status-check-time": 1666049623923,
-        "affiliations": 0.8371499098883641,
-        "abstracts": 0.6602834032303527,
-        "orcids": 0.01768921308198878,
-        "licenses": 0.1996805521152746,
-        "references": 0.719757082945412,
-        "funders": 0.1186484108748943,
-        "similarity-checking": 0.9524757211066222,
-        "award-numbers": 0.10347036565679,
+        "last-status-check-time": 1666222388138,
+        "affiliations": 0.8371383913700771,
+        "abstracts": 0.6602779272469487,
+        "orcids": 0.01768860874095712,
+        "licenses": 0.1996737301526294,
+        "references": 0.7197495750804997,
+        "funders": 0.1186528984207514,
+        "similarity-checking": 0.952477344744237,
+        "award-numbers": 0.1034753717511808,
         "ror-ids": 0,
-        "update-policies": 0.002195136534075865,
-        "resource-links": 0.008387642320865755,
+        "update-policies": 0.00219506153859294,
+        "resource-links": 0.008387355762250066,
         "descriptions": 0
       },
       "other": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.1755485893416928,
         "abstracts": 0,
         "orcids": 0,
@@ -651,7 +651,7 @@
         "descriptions": 0
       },
       "book": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -666,11 +666,11 @@
         "descriptions": 0
       },
       "proceedings-article": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.4048230082151715,
         "abstracts": 0,
         "orcids": 2.867424622575234e-05,
-        "licenses": 0.3460092617815309,
+        "licenses": 0.3460121292061535,
         "references": 0.3857001534072173,
         "funders": 0.1305710476135859,
         "similarity-checking": 0.9557728426213996,
@@ -681,7 +681,7 @@
         "descriptions": 0
       },
       "book-chapter": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -696,7 +696,7 @@
         "descriptions": 0
       },
       "proceedings": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -711,7 +711,7 @@
         "descriptions": 0
       },
       "reference-book": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -726,7 +726,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -741,7 +741,7 @@
         "descriptions": 0
       },
       "dataset": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -758,7 +758,7 @@
     },
     "current": {
       "monograph": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.8571428571428571,
         "abstracts": 0,
         "orcids": 0,
@@ -773,7 +773,7 @@
         "descriptions": 0
       },
       "report": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 1,
         "orcids": 0,
@@ -788,22 +788,22 @@
         "descriptions": 0
       },
       "journal-article": {
-        "last-status-check-time": 1666049623923,
-        "affiliations": 0.9641933287950987,
-        "abstracts": 0.9095302927161334,
-        "orcids": 0.2740639891082369,
-        "licenses": 0.1097345132743363,
-        "references": 0.8965963240299523,
-        "funders": 0.4367597004765146,
-        "similarity-checking": 0.9882232811436351,
-        "award-numbers": 0.398502382573179,
+        "last-status-check-time": 1666222388138,
+        "affiliations": 0.9643513164160827,
+        "abstracts": 0.9097217497788965,
+        "orcids": 0.28314851350432,
+        "licenses": 0.109667324307776,
+        "references": 0.8967276685488809,
+        "funders": 0.4371045649363902,
+        "similarity-checking": 0.9881624600312946,
+        "award-numbers": 0.3988706714742499,
         "ror-ids": 0,
-        "update-policies": 0.0044928522804629,
-        "resource-links": 0.0044928522804629,
+        "update-policies": 0.004490101367439962,
+        "resource-links": 0.004490101367439962,
         "descriptions": 0
       },
       "other": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -818,7 +818,7 @@
         "descriptions": 0
       },
       "book": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.1111111111111111,
         "abstracts": 0,
         "orcids": 0,
@@ -833,22 +833,22 @@
         "descriptions": 0
       },
       "proceedings-article": {
-        "last-status-check-time": 1666049623923,
-        "affiliations": 0.9963461823672963,
+        "last-status-check-time": 1666222388138,
+        "affiliations": 0.9963494342965279,
         "abstracts": 0,
-        "orcids": 0.007954805916218366,
-        "licenses": 0.05750380886893446,
-        "references": 0.9603068667502594,
-        "funders": 0.3799161374698324,
-        "similarity-checking": 0.9374536531434966,
-        "award-numbers": 0.3481508446925265,
+        "orcids": 0.009676683353688816,
+        "licenses": 0.05736219785529265,
+        "references": 0.9604611523440121,
+        "funders": 0.3805312109946449,
+        "similarity-checking": 0.9371619535894993,
+        "award-numbers": 0.3485887610892644,
         "ror-ids": 0,
         "update-policies": 0,
         "resource-links": 0,
         "descriptions": 0
       },
       "book-chapter": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0.135678391959799,
         "abstracts": 0,
         "orcids": 0,
@@ -863,14 +863,14 @@
         "descriptions": 0
       },
       "proceedings": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
         "licenses": 0,
         "references": 0,
         "funders": 0,
-        "similarity-checking": 0.001223241590214067,
+        "similarity-checking": 0.00121654501216545,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -878,7 +878,7 @@
         "descriptions": 0
       },
       "dataset": {
-        "last-status-check-time": 1666049623923,
+        "last-status-check-time": 1666222388138,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,

@@ -6,8 +6,8 @@
   ],
   "display_name": "Proceedings of the VLDB Endowment",
   "publisher": "VLDB Endowment",
-  "works_count": 3354,
-  "cited_by_count": 120089,
+  "works_count": 3351,
+  "cited_by_count": 120061,
   "is_oa": false,
   "is_in_doaj": false,
   "homepage_url": null,
@@ -31,14 +31,14 @@
       "wikidata": "https://www.wikidata.org/wiki/Q395",
       "display_name": "Mathematics",
       "level": 0,
-      "score": 64
+      "score": 64.1
     },
     {
       "id": "https://openalex.org/C111919701",
       "wikidata": "https://www.wikidata.org/wiki/Q9135",
       "display_name": "Operating system",
       "level": 1,
-      "score": 61.2
+      "score": 61.1
     },
     {
       "id": "https://openalex.org/C199360897",
@@ -101,14 +101,14 @@
       "wikidata": "https://www.wikidata.org/wiki/Q2878974",
       "display_name": "Theoretical computer science",
       "level": 1,
-      "score": 27.6
+      "score": 27.7
     },
     {
       "id": "https://openalex.org/C11413529",
       "wikidata": "https://www.wikidata.org/wiki/Q8366",
       "display_name": "Algorithm",
       "level": 1,
-      "score": 26.8
+      "score": 26.9
     },
     {
       "id": "https://openalex.org/C86803240",
@@ -136,7 +136,7 @@
       "wikidata": "https://www.wikidata.org/wiki/Q76592",
       "display_name": "Combinatorics",
       "level": 1,
-      "score": 25
+      "score": 24.9
     },
     {
       "id": "https://openalex.org/C119857082",
@@ -157,34 +157,34 @@
       "wikidata": "https://www.wikidata.org/wiki/Q121416",
       "display_name": "Discrete mathematics",
       "level": 1,
-      "score": 20.5
+      "score": 20.4
     }
   ],
   "counts_by_year": [
     {
       "year": 2022,
       "works_count": 95,
-      "cited_by_count": 7846
+      "cited_by_count": 7858
     },
     {
       "year": 2021,
       "works_count": 345,
-      "cited_by_count": 13654
+      "cited_by_count": 13674
     },
     {
       "year": 2020,
       "works_count": 328,
-      "cited_by_count": 13663
+      "cited_by_count": 13672
     },
     {
       "year": 2019,
       "works_count": 249,
-      "cited_by_count": 13475
+      "cited_by_count": 13478
     },
     {
       "year": 2018,
       "works_count": 235,
-      "cited_by_count": 12375
+      "cited_by_count": 12373
     },
     {
       "year": 2017,
@@ -194,30 +194,30 @@
     {
       "year": 2016,
       "works_count": 201,
-      "cited_by_count": 10755
+      "cited_by_count": 10756
     },
     {
       "year": 2015,
       "works_count": 240,
-      "cited_by_count": 10393
+      "cited_by_count": 10390
     },
     {
       "year": 2014,
       "works_count": 244,
-      "cited_by_count": 8418
+      "cited_by_count": 8417
     },
     {
       "year": 2013,
       "works_count": 254,
-      "cited_by_count": 6506
+      "cited_by_count": 6505
     },
     {
       "year": 2012,
       "works_count": 198,
-      "cited_by_count": 4981
+      "cited_by_count": 4980
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2022-10-18T10:57:28.100754",
+  "updated_date": "2022-10-20T02:10:43.499081",
   "created_date": "2022-02-03"
 }
