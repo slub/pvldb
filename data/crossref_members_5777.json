@@ -1,10 +1,10 @@
 {
-  "last-status-check-time": 1666074881975,
+  "last-status-check-time": 1666235701386,
   "primary-name": "VLDB Endowment",
   "counts": {
-    "current-dois": 660,
+    "current-dois": 657,
     "backfile-dois": 2523,
-    "total-dois": 3183
+    "total-dois": 3180
   },
   "breakdowns": {
     "dois-by-issued-year": [
@@ -14,7 +14,7 @@
       ],
       [
         2020,
-        315
+        312
       ],
       [
         2013,
@@ -70,8 +70,8 @@
     "10.14778"
   ],
   "coverage": {
-    "affiliations-current": 0.9984848484848485,
-    "similarity-checking-current": 0.9924242424242424,
+    "affiliations-current": 0.9984779299847794,
+    "similarity-checking-current": 0.9923896499238966,
     "descriptions-current": 0,
     "ror-ids-current": 0,
     "funders-backfile": 0,
@@ -82,7 +82,7 @@
     "orcids-backfile": 0,
     "update-policies-current": 0,
     "ror-ids-backfile": 0,
-    "orcids-current": 0.001515151515151515,
+    "orcids-current": 0.0015220700152207,
     "similarity-checking-backfile": 0.9405469678953627,
     "references-backfile": 0.9306381292112564,
     "descriptions-backfile": 0,
@@ -92,8 +92,8 @@
     "award-numbers-current": 0,
     "abstracts-backfile": 0.7126436781609194,
     "resource-links-current": 0,
-    "abstracts-current": 0.7484848484848485,
-    "references-current": 0.9909090909090909
+    "abstracts-current": 0.7473363774733638,
+    "references-current": 0.9908675799086758
   },
   "prefix": [
     {
@@ -108,7 +108,7 @@
   ],
   "counts-type": {
     "all": {
-      "journal-article": 3062,
+      "journal-article": 3059,
       "journal-issue": 121
     },
     "backfile": {
@@ -116,20 +116,20 @@
       "journal-issue": 121
     },
     "current": {
-      "journal-article": 660
+      "journal-article": 657
     }
   },
   "coverage-type": {
     "all": {
       "journal-article": {
-        "last-status-check-time": 1666074881975,
-        "affiliations": 0.9908556499020248,
-        "abstracts": 0.7485303723056826,
-        "orcids": 0.0003265839320705421,
+        "last-status-check-time": 1666235701386,
+        "affiliations": 0.9908466819221968,
+        "abstracts": 0.7482837528604119,
+        "orcids": 0.0003269042170644001,
         "licenses": 0,
-        "references": 0.9804049640757675,
+        "references": 0.980385746976136,
         "funders": 0,
-        "similarity-checking": 0.9888961463096017,
+        "similarity-checking": 0.9888852566198104,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -137,7 +137,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666074881975,
+        "last-status-check-time": 1666235701386,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -154,7 +154,7 @@
     },
     "backfile": {
       "journal-article": {
-        "last-status-check-time": 1666074881975,
+        "last-status-check-time": 1666235701386,
         "affiliations": 0.988759367194005,
         "abstracts": 0.7485428809325562,
         "orcids": 0,
@@ -169,7 +169,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666074881975,
+        "last-status-check-time": 1666235701386,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -186,14 +186,14 @@
     },
     "current": {
       "journal-article": {
-        "last-status-check-time": 1666074881975,
-        "affiliations": 0.9984848484848485,
-        "abstracts": 0.7484848484848485,
-        "orcids": 0.001515151515151515,
+        "last-status-check-time": 1666235701386,
+        "affiliations": 0.9984779299847794,
+        "abstracts": 0.7473363774733638,
+        "orcids": 0.0015220700152207,
         "licenses": 0,
-        "references": 0.9909090909090909,
+        "references": 0.9908675799086758,
         "funders": 0,
-        "similarity-checking": 0.9924242424242424,
+        "similarity-checking": 0.9923896499238966,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,

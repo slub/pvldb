@@ -55,7 +55,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 - Crossref
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 135 B]
-  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.65 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.47 KB]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.64 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.48 KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.47 KB]
   - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
