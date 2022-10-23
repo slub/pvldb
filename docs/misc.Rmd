@@ -91,7 +91,7 @@ wos_citation_count_by_year <- data.frame(
 ```
 
 ```{r wos-citations-count-plot}
-ggplot2::ggplot(wos_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=wos_citation_count_by_year$year) + ggplot2::ggtitle("PVLDB Citations Count (2022-10-23 Web of Science © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(wos_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=wos_citation_count_by_year$year) + ggplot2::ggtitle("PVLDB Citations Count (2022-10-23 Web of Science © Clarivate, 2022)") + ggplot2::xlab("Publication Year of Cited Work") + ggplot2::ylab("")
 ```
 
 ```{r citescore-citations-count-data}
@@ -113,7 +113,7 @@ scival_citation_count <- data.frame(
 ```
 
 ```{r scival-citations-count-plot}
-ggplot2::ggplot(scival_citation_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=scival_citation_count$year) + ggplot2::ggtitle("PVLDB Citations Count (2022-10-23 SciVal © Elsevier, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+ggplot2::ggplot(scival_citation_count, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=scival_citation_count$year) + ggplot2::ggtitle("PVLDB Citations Count (2022-10-23 SciVal © Elsevier, 2022)") + ggplot2::xlab("Publication Year of Cited Work") + ggplot2::ylab("")
 ```
 
 # Raw Data
