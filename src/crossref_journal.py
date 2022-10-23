@@ -115,6 +115,7 @@ def citation_main(issn, doi_list=None):
         doi_list = utils.read_json(outpath(issn, "_dois"))
         if doi_list is None:
             return
+    logger.info("Fetch citations of journal with ISSN %s!" % issn)
     citation_dois = opencitations.fetch_citations(doi_list)
     utils.store_json_pretty(citation_dois, outpath(issn, "_citation"))
     citation_count = {doi: len(citation_dois[doi] or [])
