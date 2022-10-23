@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis :: Outtakes"
 author-meta: "SLUB Dresden"
-date: "2022-10-20"
+date: "2022-10-23"
 lang: "en-US"
 output:
   html_document:
@@ -37,6 +37,10 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 
 
+![](/home/runner/work/pvldb/pvldb/public/misc_files/figure-html/wos-works-count-plot-1.png)<!-- -->
+
+
+
 
 
 
@@ -44,6 +48,10 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 ![](/home/runner/work/pvldb/pvldb/public/misc_files/figure-html/scival-works-count-plot-1.png)<!-- -->
 
 ## Citations
+
+
+
+![](/home/runner/work/pvldb/pvldb/public/misc_files/figure-html/wos-citations-count-plot-1.png)<!-- -->
 
 
 
