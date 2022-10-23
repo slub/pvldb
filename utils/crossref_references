@@ -18,4 +18,4 @@
 ## You should have received a copy of the GNU General Public License
 ## along with slub/pvldb. If not, see <https://www.gnu.org/licenses/>.
 ##
-python -m src.crossref_journal_pvldb
+python -m src.crossref_journal_pvldb_references
