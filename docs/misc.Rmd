@@ -48,6 +48,17 @@ jdb_works_count_by_year <- do.call("rbind", lapply(jdb_journal$dois_by_issued_ye
 ggplot2::ggplot(jdb_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=jdb_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (JournalsDB)") + ggplot2::xlab("") + ggplot2::ylab("")
 ```
 
+```{r wos-works-count-data}
+wos_works_count_by_year <- data.frame(
+  year=c(2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021),
+  count=c(168, 167, 198, 188, 194, 251, 243, 229, 183, 207, 207, 234, 297, 356)
+) # date updated: 2022-10-23
+```
+
+```{r wos-works-count-plot}
+ggplot2::ggplot(wos_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=wos_works_count_by_year$year) + ggplot2::ggtitle("PVLDB Works Count (2022-10-23 Web of Science © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
+
 ```{r citescore-works-count-data}
 citescore_works_count <- data.frame(
   year=c(2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021),
@@ -71,6 +82,17 @@ ggplot2::ggplot(scival_works_count, ggplot2::aes(year, count)) + ggplot2::geom_c
 ```
 
 ## Citations
+
+```{r wos-citations-count-data}
+wos_citation_count_by_year <- data.frame(
+  year=c(2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021),
+  count=c(6580, 3127, 7277, 6557, 8958, 6914, 7039, 6684, 3790, 5060, 2969, 2254, 1671, 327)
+) # date updated: 2022-10-23
+```
+
+```{r wos-citations-count-plot}
+ggplot2::ggplot(wos_citation_count_by_year, ggplot2::aes(year, count)) + ggplot2::geom_col() + ggplot2::scale_x_continuous(breaks=wos_citation_count_by_year$year) + ggplot2::ggtitle("PVLDB Citations Count (2022-10-23 Web of Science © Clarivate, 2022)") + ggplot2::xlab("") + ggplot2::ylab("")
+```
 
 ```{r citescore-citations-count-data}
 citescore_citation_count <- data.frame(
