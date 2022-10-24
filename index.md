@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-20"
+date: "2022-10-24"
 lang: "en-US"
 output:
   html_document:
@@ -55,7 +55,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 - Crossref
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 135 B]
-  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.64 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.48 KB]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.64 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.47 KB]
   - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.47 KB]
   - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
@@ -79,7 +79,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
     - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
     - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
 - OpenAlex
-  - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.53 KB]
+  - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.33 KB]
 
 # Data Sources
 

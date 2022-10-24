@@ -1,5 +1,5 @@
 {
-  "last-status-check-time": 1666235701386,
+  "last-status-check-time": 1666585448317,
   "primary-name": "VLDB Endowment",
   "counts": {
     "current-dois": 657,
@@ -122,7 +122,7 @@
   "coverage-type": {
     "all": {
       "journal-article": {
-        "last-status-check-time": 1666235701386,
+        "last-status-check-time": 1666585448317,
         "affiliations": 0.9908466819221968,
         "abstracts": 0.7482837528604119,
         "orcids": 0.0003269042170644001,
@@ -137,7 +137,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666235701386,
+        "last-status-check-time": 1666585448317,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -154,7 +154,7 @@
     },
     "backfile": {
       "journal-article": {
-        "last-status-check-time": 1666235701386,
+        "last-status-check-time": 1666585448317,
         "affiliations": 0.988759367194005,
         "abstracts": 0.7485428809325562,
         "orcids": 0,
@@ -169,7 +169,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666235701386,
+        "last-status-check-time": 1666585448317,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -186,7 +186,7 @@
     },
     "current": {
       "journal-article": {
-        "last-status-check-time": 1666235701386,
+        "last-status-check-time": 1666585448317,
         "affiliations": 0.9984779299847794,
         "abstracts": 0.7473363774733638,
         "orcids": 0.0015220700152207,
