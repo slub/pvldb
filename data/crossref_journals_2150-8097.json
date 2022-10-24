@@ -1,5 +1,5 @@
 {
-  "last-status-check-time": 1666042155897,
+  "last-status-check-time": 1666556776881,
   "counts": {
     "current-dois": 919,
     "backfile-dois": 2550,
@@ -105,7 +105,7 @@
   ],
   "coverage-type": {
     "all": {
-      "last-status-check-time": 1666042155897,
+      "last-status-check-time": 1666556776881,
       "affiliations": 0.957048140674546,
       "abstracts": 0.7420005765350245,
       "orcids": 0.0002882675122513693,
@@ -120,7 +120,7 @@
       "descriptions": 0
     },
     "backfile": {
-      "last-status-check-time": 1666042155897,
+      "last-status-check-time": 1666556776881,
       "affiliations": 0.9419607843137255,
       "abstracts": 0.7141176470588235,
       "orcids": 0,
@@ -135,7 +135,7 @@
       "descriptions": 0
     },
     "current": {
-      "last-status-check-time": 1666042155897,
+      "last-status-check-time": 1666556776881,
       "affiliations": 0.998911860718172,
       "abstracts": 0.8193688792165397,
       "orcids": 0.001088139281828074,
