@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis"
 author-meta: "SLUB Dresden"
-date: "2022-10-24"
+date: "2023-01-19"
 lang: "en-US"
 output:
   html_document:
@@ -55,31 +55,31 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 - Crossref
   - [prefixes](./data/crossref_prefixes_10-14778.json) (`10.14778`) [JSON, 135 B]
-  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 5.64 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 21.47 KB]
-  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.47 KB]
-  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 29.05 MB]
+  - [members](./data/crossref_members_5777.json) (`5777`) [JSON, 4.78 KB] + [members](./data/crossref_members_320.json) (`320`) [JSON, 22.83 KB]
+  - [journals](./data/crossref_journals_2150-8097.json) (`2150-8097`) [JSON, 4.43 KB]
+  - [works](./data/crossref_works_filter-issn-2150-8097_works.json) (`filter=issn:2150-8097`) [JSON, 33.87 MB]
     - [prefixes](./data/crossref_works_filter-issn-2150-8097_prefixes.json) [JSON, 16 B]
     - [members](./data/crossref_works_filter-issn-2150-8097_members.json) [JSON, 21 B]
-    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 103.08 KB]
+    - [dois](./data/crossref_works_filter-issn-2150-8097_dois.json) [JSON, 104.01 KB]
     - [dois-issue](./data/crossref_works_filter-issn-2150-8097_dois-issue.json) [JSON, 2.66 KB]
-    - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, 100.42 KB]
-    - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, 2.70 MB] (via OpenCitations)
-      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 1.28 MB]
-      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 43.98 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.29 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, 161.04 KB] (enriched via OpenAlex)
-      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.00 MB]
-    - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 115.19 KB] (via OpenCitations)
-    - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.01 MB]
-      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 0.80 MB]
-      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.12 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 38.83 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.csv) [CSV, 119.47 KB] (enriched via OpenAlex)
-      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.59 MB]
-    - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 115.83 KB]
-    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 79.79 KB]
+    - [dois-article](./data/crossref_works_filter-issn-2150-8097_dois-article.json) [JSON, 101.35 KB]
+    - [citation](./data/crossref_works_filter-issn-2150-8097_citation.json) [JSON, 2.74 MB] (via OpenCitations)
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 1.30 MB]
+      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 44.19 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 53.56 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, 161.79 KB] (enriched via OpenAlex)
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.02 MB]
+    - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 116.22 KB] (via OpenCitations)
+    - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.23 MB]
+      - [dois](./data/crossref_works_filter-issn-2150-8097_dois-reference.json) [JSON, 0.88 MB]
+      - [issns](./data/crossref_works_filter-issn-2150-8097_issns-reference.json) [JSON, 32.30 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.json) [JSON, 39.06 KB]
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-reference.csv) [CSV, 119.58 KB] (enriched via OpenAlex)
+      - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-reference.json) [JSON, 0.64 MB]
+    - [count-reference](./data/crossref_works_filter-issn-2150-8097_count-reference.json) [JSON, 116.94 KB]
+    - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types.json) [JSON, 80.50 KB]
 - OpenAlex
-  - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 5.33 KB]
+  - [journals](./data/openalex_journals_V4210226185.json) (`V4210226185`) [JSON, 6.40 KB]
 
 # Data Sources
 
