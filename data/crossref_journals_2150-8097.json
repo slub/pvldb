@@ -1,9 +1,9 @@
 {
-  "last-status-check-time": 1666556776881,
+  "last-status-check-time": 1674102269969,
   "counts": {
-    "current-dois": 919,
-    "backfile-dois": 2550,
-    "total-dois": 3469
+    "current-dois": 634,
+    "backfile-dois": 2866,
+    "total-dois": 3500
   },
   "breakdowns": {
     "dois-by-issued-year": [
@@ -17,7 +17,7 @@
       ],
       [
         2022,
-        258
+        289
       ],
       [
         2013,
@@ -71,30 +71,30 @@
   },
   "publisher": "VLDB Endowment",
   "coverage": {
-    "affiliations-current": 0.998911860718172,
-    "similarity-checking-current": 0.9945593035908596,
+    "affiliations-current": 1,
+    "similarity-checking-current": 0.9921135646687697,
     "descriptions-current": 0,
     "ror-ids-current": 0,
     "funders-backfile": 0,
     "licenses-backfile": 0,
     "funders-current": 0,
-    "affiliations-backfile": 0.9419607843137255,
+    "affiliations-backfile": 0.9480111653872993,
     "resource-links-backfile": 0,
     "orcids-backfile": 0,
-    "update-policies-current": 0,
+    "update-policies-current": 0.03312302839116719,
     "ror-ids-backfile": 0,
-    "orcids-current": 0.001088139281828074,
-    "similarity-checking-backfile": 0.9411764705882353,
-    "references-backfile": 0.9313725490196078,
+    "orcids-current": 0.001577287066246057,
+    "similarity-checking-backfile": 0.950453593859037,
+    "references-backfile": 0.9385903698534543,
     "descriptions-backfile": 0,
     "award-numbers-backfile": 0,
     "update-policies-backfile": 0,
     "licenses-current": 0,
     "award-numbers-current": 0,
-    "abstracts-backfile": 0.7141176470588235,
+    "abstracts-backfile": 0.9459176552686671,
     "resource-links-current": 0,
-    "abstracts-current": 0.8193688792165397,
-    "references-current": 0.9912948857453754
+    "abstracts-current": 1,
+    "references-current": 0.9889589905362776
   },
   "title": "Proceedings of the VLDB Endowment",
   "subjects": [
@@ -105,29 +105,29 @@
   ],
   "coverage-type": {
     "all": {
-      "last-status-check-time": 1666556776881,
-      "affiliations": 0.957048140674546,
-      "abstracts": 0.7420005765350245,
-      "orcids": 0.0002882675122513693,
+      "last-status-check-time": 1674102269969,
+      "affiliations": 0.9574285714285714,
+      "abstracts": 0.9557142857142857,
+      "orcids": 0.0002857142857142857,
       "licenses": 0,
-      "references": 0.9472470452579994,
+      "references": 0.9477142857142857,
       "funders": 0,
-      "similarity-checking": 0.9553185356010379,
+      "similarity-checking": 0.958,
       "award-numbers": 0,
       "ror-ids": 0,
-      "update-policies": 0,
+      "update-policies": 0.006,
       "resource-links": 0,
       "descriptions": 0
     },
     "backfile": {
-      "last-status-check-time": 1666556776881,
-      "affiliations": 0.9419607843137255,
-      "abstracts": 0.7141176470588235,
+      "last-status-check-time": 1674102269969,
+      "affiliations": 0.9480111653872993,
+      "abstracts": 0.9459176552686671,
       "orcids": 0,
       "licenses": 0,
-      "references": 0.9313725490196078,
+      "references": 0.9385903698534543,
       "funders": 0,
-      "similarity-checking": 0.9411764705882353,
+      "similarity-checking": 0.950453593859037,
       "award-numbers": 0,
       "ror-ids": 0,
       "update-policies": 0,
@@ -135,17 +135,17 @@
       "descriptions": 0
     },
     "current": {
-      "last-status-check-time": 1666556776881,
-      "affiliations": 0.998911860718172,
-      "abstracts": 0.8193688792165397,
-      "orcids": 0.001088139281828074,
+      "last-status-check-time": 1674102269969,
+      "affiliations": 1,
+      "abstracts": 1,
+      "orcids": 0.001577287066246057,
       "licenses": 0,
-      "references": 0.9912948857453754,
+      "references": 0.9889589905362776,
       "funders": 0,
-      "similarity-checking": 0.9945593035908596,
+      "similarity-checking": 0.9921135646687697,
       "award-numbers": 0,
       "ror-ids": 0,
-      "update-policies": 0,
+      "update-policies": 0.03312302839116719,
       "resource-links": 0,
       "descriptions": 0
     }
@@ -174,7 +174,7 @@
     "deposits-descriptions-backfile": false,
     "deposits-orcids-backfile": false,
     "deposits-funders-backfile": false,
-    "deposits-update-policies-current": false,
+    "deposits-update-policies-current": true,
     "deposits-similarity-checking-current": true,
     "deposits-licenses-current": false
   },

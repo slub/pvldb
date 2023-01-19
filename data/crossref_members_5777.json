@@ -1,68 +1,60 @@
 {
-  "last-status-check-time": 1666585448317,
+  "last-status-check-time": 1674094057952,
   "primary-name": "VLDB Endowment",
   "counts": {
-    "current-dois": 657,
-    "backfile-dois": 2523,
-    "total-dois": 3180
+    "current-dois": 0,
+    "backfile-dois": 146,
+    "total-dois": 146
   },
   "breakdowns": {
     "dois-by-issued-year": [
       [
-        2021,
-        345
-      ],
-      [
-        2020,
-        312
-      ],
-      [
-        2013,
-        254
-      ],
-      [
-        2014,
-        244
-      ],
-      [
-        2015,
-        237
-      ],
-      [
-        2019,
-        231
-      ],
-      [
         2018,
-        222
+        31
       ],
       [
         2017,
-        212
+        20
       ],
       [
-        2010,
-        199
-      ],
-      [
-        2012,
-        197
+        2013,
+        16
       ],
       [
         2016,
-        196
+        14
+      ],
+      [
+        2014,
+        14
+      ],
+      [
+        2015,
+        13
       ],
       [
         2011,
-        191
+        11
       ],
       [
-        2008,
-        171
+        2012,
+        10
+      ],
+      [
+        2019,
+        9
+      ],
+      [
+        2010,
+        4
       ],
       [
         2009,
-        169
+        2
+      ],
+      [
+        2008,
+        2
       ]
     ]
   },
@@ -70,30 +62,30 @@
     "10.14778"
   ],
   "coverage": {
-    "affiliations-current": 0.9984779299847794,
-    "similarity-checking-current": 0.9923896499238966,
+    "affiliations-current": 0,
+    "similarity-checking-current": 0,
     "descriptions-current": 0,
     "ror-ids-current": 0,
     "funders-backfile": 0,
     "licenses-backfile": 0,
     "funders-current": 0,
-    "affiliations-backfile": 0.9413396749900912,
+    "affiliations-backfile": 0.04794520547945205,
     "resource-links-backfile": 0,
     "orcids-backfile": 0,
     "update-policies-current": 0,
     "ror-ids-backfile": 0,
-    "orcids-current": 0.0015220700152207,
-    "similarity-checking-backfile": 0.9405469678953627,
-    "references-backfile": 0.9306381292112564,
+    "orcids-current": 0,
+    "similarity-checking-backfile": 0.1164383561643836,
+    "references-backfile": 0.04794520547945205,
     "descriptions-backfile": 0,
     "award-numbers-backfile": 0,
     "update-policies-backfile": 0,
     "licenses-current": 0,
     "award-numbers-current": 0,
-    "abstracts-backfile": 0.7126436781609194,
+    "abstracts-backfile": 0,
     "resource-links-current": 0,
-    "abstracts-current": 0.7473363774733638,
-    "references-current": 0.9908675799086758
+    "abstracts-current": 0,
+    "references-current": 0
   },
   "prefix": [
     {
@@ -108,28 +100,26 @@
   ],
   "counts-type": {
     "all": {
-      "journal-article": 3059,
+      "journal-article": 25,
       "journal-issue": 121
     },
     "backfile": {
-      "journal-article": 2402,
+      "journal-article": 25,
       "journal-issue": 121
     },
-    "current": {
-      "journal-article": 657
-    }
+    "current": {}
   },
   "coverage-type": {
     "all": {
       "journal-article": {
-        "last-status-check-time": 1666585448317,
-        "affiliations": 0.9908466819221968,
-        "abstracts": 0.7482837528604119,
-        "orcids": 0.0003269042170644001,
+        "last-status-check-time": 1674094057952,
+        "affiliations": 0.28,
+        "abstracts": 0,
+        "orcids": 0,
         "licenses": 0,
-        "references": 0.980385746976136,
+        "references": 0.28,
         "funders": 0,
-        "similarity-checking": 0.9888852566198104,
+        "similarity-checking": 0.68,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -137,7 +127,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666585448317,
+        "last-status-check-time": 1674094057952,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -154,14 +144,14 @@
     },
     "backfile": {
       "journal-article": {
-        "last-status-check-time": 1666585448317,
-        "affiliations": 0.988759367194005,
-        "abstracts": 0.7485428809325562,
+        "last-status-check-time": 1674094057952,
+        "affiliations": 0.28,
+        "abstracts": 0,
         "orcids": 0,
         "licenses": 0,
-        "references": 0.97751873438801,
+        "references": 0.28,
         "funders": 0,
-        "similarity-checking": 0.9879267277268943,
+        "similarity-checking": 0.68,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -169,7 +159,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1666585448317,
+        "last-status-check-time": 1674094057952,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -184,27 +174,11 @@
         "descriptions": 0
       }
     },
-    "current": {
-      "journal-article": {
-        "last-status-check-time": 1666585448317,
-        "affiliations": 0.9984779299847794,
-        "abstracts": 0.7473363774733638,
-        "orcids": 0.0015220700152207,
-        "licenses": 0,
-        "references": 0.9908675799086758,
-        "funders": 0,
-        "similarity-checking": 0.9923896499238966,
-        "award-numbers": 0,
-        "ror-ids": 0,
-        "update-policies": 0,
-        "resource-links": 0,
-        "descriptions": 0
-      }
-    }
+    "current": {}
   },
   "flags": {
-    "deposits-abstracts-current": true,
-    "deposits-orcids-current": true,
+    "deposits-abstracts-current": false,
+    "deposits-orcids-current": false,
     "deposits": true,
     "deposits-affiliations-backfile": true,
     "deposits-update-policies-backfile": false,
@@ -213,21 +187,21 @@
     "deposits-resource-links-current": false,
     "deposits-ror-ids-current": false,
     "deposits-articles": true,
-    "deposits-affiliations-current": true,
+    "deposits-affiliations-current": false,
     "deposits-funders-current": false,
     "deposits-references-backfile": true,
     "deposits-ror-ids-backfile": false,
-    "deposits-abstracts-backfile": true,
+    "deposits-abstracts-backfile": false,
     "deposits-licenses-backfile": false,
     "deposits-award-numbers-backfile": false,
     "deposits-descriptions-current": false,
-    "deposits-references-current": true,
+    "deposits-references-current": false,
     "deposits-resource-links-backfile": false,
     "deposits-descriptions-backfile": false,
     "deposits-orcids-backfile": false,
     "deposits-funders-backfile": false,
     "deposits-update-policies-current": false,
-    "deposits-similarity-checking-current": true,
+    "deposits-similarity-checking-current": false,
     "deposits-licenses-current": false
   },
   "location": "United States",
