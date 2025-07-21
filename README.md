@@ -1,7 +1,5 @@
 # Bibliometric Analysis of PVLDB
 
-*Under Construction*
-
 Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [report](https://slub.github.io/pvldb/) for results. The report files can be found on the [gh-pages](https://github.com/slub/pvldb/tree/gh-pages) branch.
 
 ## Development
