@@ -54,6 +54,7 @@ ggplot2::ggplot(cr_works_count_by_year, ggplot2::aes(year, count)) + ggplot2::ge
 
 ```{r openalex-works-count-data}
 oa_works_count_by_year <- do.call("rbind", lapply(oa_venue$counts_by_year, function(x) data.frame(year=x$year, count=as.integer(x$works_count))))
+oa_works_count_by_year <- oa_works_count_by_year[oa_works_count_by_year$count > 0, ]
 ```
 
 ```{r openalex-works-count-plot}
