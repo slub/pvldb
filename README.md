@@ -46,7 +46,7 @@ export OPENALEX_MAILTO="humans@institution.org"
 export OPENCITATIONS_ACCESS_TOKEN="YOUR_OC_ACCESS_TOKEN"
 ```
 
-For further details, see the documentation of the [Crossref polite pool](https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service), the [OpenAlex polite pool](https://docs.openalex.org/api#the-polite-pool) and the [OpenCitations access token](https://opencitations.net/accesstoken).
+For further details, see the documentation of the [Crossref polite pool](https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service), the [OpenAlex polite pool](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) and the [OpenCitations access token](https://opencitations.net/accesstoken).
 
 ### Retrieve data
 
