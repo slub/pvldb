@@ -1,6 +1,6 @@
 certifi==2025.7.14
 charset-normalizer==3.4.2
-diophila==0.4.0
+-e git+https://github.com/herreio/diophila.git@3e71d157c68246be86f29a2803c019c17abe6bfb#egg=diophila
 habanero==1.2.2
 idna==3.10
 requests==2.32.4
