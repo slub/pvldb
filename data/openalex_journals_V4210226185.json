@@ -1,17 +1,28 @@
 {
-  "id": "https://openalex.org/V4210226185",
+  "id": "https://openalex.org/S4210226185",
   "issn_l": "2150-8097",
   "issn": [
     "2150-8097"
   ],
   "display_name": "Proceedings of the VLDB Endowment",
-  "publisher": "VLDB Endowment",
-  "works_count": 3317,
-  "cited_by_count": 121384,
+  "host_organization": "https://openalex.org/P4310319798",
+  "host_organization_name": "Association for Computing Machinery",
+  "host_organization_lineage": [
+    "https://openalex.org/P4310319798"
+  ],
+  "works_count": 3571,
+  "cited_by_count": 180243,
+  "summary_stats": {
+    "2yr_mean_citedness": 4.995884773662551,
+    "h_index": 185,
+    "i10_index": 2641
+  },
   "is_oa": false,
   "is_in_doaj": false,
+  "is_indexed_in_scopus": true,
+  "is_core": true,
   "ids": {
-    "openalex": "https://openalex.org/V4210226185",
+    "openalex": "https://openalex.org/S4210226185",
     "issn_l": "2150-8097",
     "issn": [
       "2150-8097"
@@ -19,7 +30,8 @@
     "wikidata": "https://www.wikidata.org/entity/Q27722874",
     "fatcat": "https://fatcat.wiki/container/p6rqwwpkkjbcldejepcehaalby"
   },
-  "homepage_url": null,
+  "homepage_url": "http://www.eecs.umich.edu/db/pvldb/",
+  "apc_prices": null,
   "apc_usd": null,
   "country_code": "US",
   "societies": [],
@@ -30,32 +42,893 @@
   ],
   "abbreviated_title": null,
   "type": "journal",
+  "topics": [
+    {
+      "id": "https://openalex.org/T10317",
+      "display_name": "Advanced Database Systems and Queries",
+      "count": 1345,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11106",
+      "display_name": "Data Management and Algorithms",
+      "count": 1341,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1711",
+        "display_name": "Signal Processing"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10101",
+      "display_name": "Cloud Computing and Resource Management",
+      "count": 692,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11181",
+      "display_name": "Advanced Data Storage Technologies",
+      "count": 647,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11719",
+      "display_name": "Data Quality and Management",
+      "count": 579,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1803",
+        "display_name": "Management Science and Operations Research"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/18",
+        "display_name": "Decision Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10772",
+      "display_name": "Distributed systems and fault tolerance",
+      "count": 501,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12292",
+      "display_name": "Graph Theory and Algorithms",
+      "count": 463,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1707",
+        "display_name": "Computer Vision and Pattern Recognition"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10215",
+      "display_name": "Semantic Web and Ontologies",
+      "count": 344,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11273",
+      "display_name": "Advanced Graph Neural Networks",
+      "count": 325,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11478",
+      "display_name": "Caching and Content Delivery",
+      "count": 322,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10764",
+      "display_name": "Privacy-Preserving Technologies in Data",
+      "count": 304,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11986",
+      "display_name": "Scientific Computing and Data Management",
+      "count": 295,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1802",
+        "display_name": "Information Systems and Management"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/18",
+        "display_name": "Decision Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12761",
+      "display_name": "Data Stream Mining Techniques",
+      "count": 282,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10538",
+      "display_name": "Data Mining Algorithms and Applications",
+      "count": 251,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10054",
+      "display_name": "Parallel Computing and Optimization Techniques",
+      "count": 233,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1708",
+        "display_name": "Hardware and Architecture"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12016",
+      "display_name": "Web Data Mining and Analysis",
+      "count": 233,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10064",
+      "display_name": "Complex Network Analysis Techniques",
+      "count": 227,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3109",
+        "display_name": "Statistical and Nonlinear Physics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11269",
+      "display_name": "Algorithms and Data Compression",
+      "count": 225,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12205",
+      "display_name": "Time Series Analysis and Forecasting",
+      "count": 220,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1711",
+        "display_name": "Signal Processing"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10237",
+      "display_name": "Cryptography and Data Security",
+      "count": 193,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10028",
+      "display_name": "Topic Modeling",
+      "count": 169,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11704",
+      "display_name": "Mobile Crowdsensing and Crowdsourcing",
+      "count": 146,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1706",
+        "display_name": "Computer Science Applications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10627",
+      "display_name": "Advanced Image and Video Retrieval Techniques",
+      "count": 145,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1707",
+        "display_name": "Computer Vision and Pattern Recognition"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10742",
+      "display_name": "Peer-to-Peer Network Technologies",
+      "count": 145,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10715",
+      "display_name": "Distributed and Parallel Computing Systems",
+      "count": 135,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "topic_share": [
+    {
+      "id": "https://openalex.org/T12292",
+      "display_name": "Graph Theory and Algorithms",
+      "value": 0.0087055,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1707",
+        "display_name": "Computer Vision and Pattern Recognition"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10317",
+      "display_name": "Advanced Database Systems and Queries",
+      "value": 0.0059771,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11106",
+      "display_name": "Data Management and Algorithms",
+      "value": 0.00557,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1711",
+        "display_name": "Signal Processing"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12761",
+      "display_name": "Data Stream Mining Techniques",
+      "value": 0.00504,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11273",
+      "display_name": "Advanced Graph Neural Networks",
+      "value": 0.0048458,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11719",
+      "display_name": "Data Quality and Management",
+      "value": 0.0047441,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1803",
+        "display_name": "Management Science and Operations Research"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/18",
+        "display_name": "Decision Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11704",
+      "display_name": "Mobile Crowdsensing and Crowdsourcing",
+      "value": 0.0031415,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1706",
+        "display_name": "Computer Science Applications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11181",
+      "display_name": "Advanced Data Storage Technologies",
+      "value": 0.003096,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10101",
+      "display_name": "Cloud Computing and Resource Management",
+      "value": 0.0030089,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10772",
+      "display_name": "Distributed systems and fault tolerance",
+      "value": 0.0027829,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10764",
+      "display_name": "Privacy-Preserving Technologies in Data",
+      "value": 0.0023418,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12205",
+      "display_name": "Time Series Analysis and Forecasting",
+      "value": 0.0022348,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1711",
+        "display_name": "Signal Processing"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11478",
+      "display_name": "Caching and Content Delivery",
+      "value": 0.0019357,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12016",
+      "display_name": "Web Data Mining and Analysis",
+      "value": 0.001798,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11986",
+      "display_name": "Scientific Computing and Data Management",
+      "value": 0.0016597,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1802",
+        "display_name": "Information Systems and Management"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/18",
+        "display_name": "Decision Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T13282",
+      "display_name": "Automated Road and Building Extraction",
+      "value": 0.0015662,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2212",
+        "display_name": "Ocean Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10538",
+      "display_name": "Data Mining Algorithms and Applications",
+      "value": 0.0015243,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12535",
+      "display_name": "Machine Learning and Data Classification",
+      "value": 0.0013251,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10799",
+      "display_name": "Data Visualization and Analytics",
+      "value": 0.0013103,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1707",
+        "display_name": "Computer Vision and Pattern Recognition"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11269",
+      "display_name": "Algorithms and Data Compression",
+      "value": 0.0012846,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10237",
+      "display_name": "Cryptography and Data Security",
+      "value": 0.0012577,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11612",
+      "display_name": "Stochastic Gradient Optimization Techniques",
+      "value": 0.0011976,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10742",
+      "display_name": "Peer-to-Peer Network Technologies",
+      "value": 0.0011938,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10064",
+      "display_name": "Complex Network Analysis Techniques",
+      "value": 0.0011129,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3109",
+        "display_name": "Statistical and Nonlinear Physics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11980",
+      "display_name": "Human Mobility and Location-Based Analysis",
+      "value": 0.001042,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3313",
+        "display_name": "Transportation"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    }
+  ],
   "x_concepts": [
     {
       "id": "https://openalex.org/C41008148",
       "wikidata": "https://www.wikidata.org/wiki/Q21198",
       "display_name": "Computer science",
       "level": 0,
-      "score": 105
+      "score": 122.8
     },
     {
       "id": "https://openalex.org/C33923547",
       "wikidata": "https://www.wikidata.org/wiki/Q395",
       "display_name": "Mathematics",
       "level": 0,
-      "score": 70.5
+      "score": 83.5
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 78.4
     },
     {
       "id": "https://openalex.org/C199360897",
       "wikidata": "https://www.wikidata.org/wiki/Q9143",
       "display_name": "Programming language",
       "level": 1,
-      "score": 68.3
+      "score": 77.1
     },
     {
-      "id": "https://openalex.org/C111919701",
-      "wikidata": "https://www.wikidata.org/wiki/Q9135",
-      "display_name": "Operating system",
+      "id": "https://openalex.org/C77088390",
+      "wikidata": "https://www.wikidata.org/wiki/Q8513",
+      "display_name": "Database",
       "level": 1,
       "score": 67.6
     },
@@ -64,191 +937,215 @@
       "wikidata": "https://www.wikidata.org/wiki/Q172491",
       "display_name": "Data mining",
       "level": 1,
-      "score": 58.1
-    },
-    {
-      "id": "https://openalex.org/C77088390",
-      "wikidata": "https://www.wikidata.org/wiki/Q8513",
-      "display_name": "Database",
-      "level": 1,
-      "score": 57.7
+      "score": 66.5
     },
     {
       "id": "https://openalex.org/C127413603",
       "wikidata": "https://www.wikidata.org/wiki/Q11023",
       "display_name": "Engineering",
       "level": 0,
-      "score": 51.6
+      "score": 60.4
     },
     {
       "id": "https://openalex.org/C154945302",
       "wikidata": "https://www.wikidata.org/wiki/Q11660",
       "display_name": "Artificial intelligence",
       "level": 1,
-      "score": 49.9
+      "score": 59.8
     },
     {
       "id": "https://openalex.org/C23123220",
       "wikidata": "https://www.wikidata.org/wiki/Q816826",
       "display_name": "Information retrieval",
       "level": 1,
-      "score": 39.5
+      "score": 44.6
     },
     {
       "id": "https://openalex.org/C136764020",
       "wikidata": "https://www.wikidata.org/wiki/Q466",
       "display_name": "World Wide Web",
       "level": 1,
-      "score": 35.2
+      "score": 39.8
     },
     {
       "id": "https://openalex.org/C105795698",
       "wikidata": "https://www.wikidata.org/wiki/Q12483",
       "display_name": "Statistics",
       "level": 1,
-      "score": 32.7
-    },
-    {
-      "id": "https://openalex.org/C86803240",
-      "wikidata": "https://www.wikidata.org/wiki/Q420",
-      "display_name": "Biology",
-      "level": 0,
-      "score": 30
+      "score": 37.8
     },
     {
       "id": "https://openalex.org/C80444323",
       "wikidata": "https://www.wikidata.org/wiki/Q2878974",
       "display_name": "Theoretical computer science",
       "level": 1,
-      "score": 30
+      "score": 35.3
     },
     {
-      "id": "https://openalex.org/C11413529",
-      "wikidata": "https://www.wikidata.org/wiki/Q8366",
-      "display_name": "Algorithm",
-      "level": 1,
-      "score": 29.1
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 34.9
     },
     {
       "id": "https://openalex.org/C121332964",
       "wikidata": "https://www.wikidata.org/wiki/Q413",
       "display_name": "Physics",
       "level": 0,
-      "score": 28.7
+      "score": 34.2
+    },
+    {
+      "id": "https://openalex.org/C11413529",
+      "wikidata": "https://www.wikidata.org/wiki/Q8366",
+      "display_name": "Algorithm",
+      "level": 1,
+      "score": 33.4
     },
     {
       "id": "https://openalex.org/C162324750",
       "wikidata": "https://www.wikidata.org/wiki/Q8134",
       "display_name": "Economics",
       "level": 0,
-      "score": 28.4
-    },
-    {
-      "id": "https://openalex.org/C138885662",
-      "wikidata": "https://www.wikidata.org/wiki/Q5891",
-      "display_name": "Philosophy",
-      "level": 0,
-      "score": 27.3
+      "score": 33.4
     },
     {
       "id": "https://openalex.org/C119857082",
       "wikidata": "https://www.wikidata.org/wiki/Q2539",
       "display_name": "Machine learning",
       "level": 1,
-      "score": 27.1
+      "score": 32.8
     },
     {
       "id": "https://openalex.org/C114614502",
       "wikidata": "https://www.wikidata.org/wiki/Q76592",
       "display_name": "Combinatorics",
       "level": 1,
-      "score": 27.1
+      "score": 32.7
+    },
+    {
+      "id": "https://openalex.org/C138885662",
+      "wikidata": "https://www.wikidata.org/wiki/Q5891",
+      "display_name": "Philosophy",
+      "level": 0,
+      "score": 31.5
     },
     {
       "id": "https://openalex.org/C118615104",
       "wikidata": "https://www.wikidata.org/wiki/Q121416",
       "display_name": "Discrete mathematics",
       "level": 1,
-      "score": 22.5
+      "score": 27
     },
     {
       "id": "https://openalex.org/C205649164",
       "wikidata": "https://www.wikidata.org/wiki/Q1071",
       "display_name": "Geography",
       "level": 0,
-      "score": 22
+      "score": 26.1
     },
     {
       "id": "https://openalex.org/C31258907",
       "wikidata": "https://www.wikidata.org/wiki/Q1301371",
       "display_name": "Computer network",
       "level": 1,
-      "score": 20.9
+      "score": 24.7
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 22.8
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 22.5
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 22.3
     }
   ],
   "counts_by_year": [
     {
-      "year": 2023,
+      "year": 2025,
       "works_count": 0,
-      "cited_by_count": 379
+      "cited_by_count": 4806
+    },
+    {
+      "year": 2024,
+      "works_count": 447,
+      "cited_by_count": 14166
+    },
+    {
+      "year": 2023,
+      "works_count": 372,
+      "cited_by_count": 14770
     },
     {
       "year": 2022,
-      "works_count": 289,
-      "cited_by_count": 10629
+      "works_count": 357,
+      "cited_by_count": 13091
     },
     {
       "year": 2021,
-      "works_count": 347,
-      "cited_by_count": 14594
+      "works_count": 348,
+      "cited_by_count": 17146
     },
     {
       "year": 2020,
-      "works_count": 321,
-      "cited_by_count": 13746
+      "works_count": 319,
+      "cited_by_count": 16304
     },
     {
       "year": 2019,
       "works_count": 242,
-      "cited_by_count": 14004
+      "cited_by_count": 16331
     },
     {
       "year": 2018,
-      "works_count": 231,
-      "cited_by_count": 12492
+      "works_count": 232,
+      "cited_by_count": 14828
     },
     {
       "year": 2017,
       "works_count": 223,
-      "cited_by_count": 10785
+      "cited_by_count": 12890
     },
     {
       "year": 2016,
       "works_count": 197,
-      "cited_by_count": 10772
+      "cited_by_count": 12245
     },
     {
       "year": 2015,
-      "works_count": 238,
-      "cited_by_count": 10301
+      "works_count": 241,
+      "cited_by_count": 11314
     },
     {
       "year": 2014,
       "works_count": 244,
-      "cited_by_count": 8385
+      "cited_by_count": 9506
     },
     {
       "year": 2013,
       "works_count": 254,
-      "cited_by_count": 6275
+      "cited_by_count": 7635
     },
     {
       "year": 2012,
       "works_count": 197,
-      "cited_by_count": 4792
+      "cited_by_count": 5782
     }
   ],
-  "works_api_url": "https://api.openalex.org/works?filter=host_venue.id:V4210226185",
-  "updated_date": "2023-01-18T21:56:43.009549",
+  "works_api_url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210226185",
+  "updated_date": "2025-07-17T19:41:53.554218",
   "created_date": "2022-02-03"
 }

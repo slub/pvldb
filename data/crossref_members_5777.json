@@ -1,20 +1,16 @@
 {
-  "last-status-check-time": 1674094057952,
+  "last-status-check-time": 1753055843340,
   "primary-name": "VLDB Endowment",
   "counts": {
     "current-dois": 0,
-    "backfile-dois": 146,
-    "total-dois": 146
+    "backfile-dois": 129,
+    "total-dois": 129
   },
   "breakdowns": {
     "dois-by-issued-year": [
       [
         2018,
-        31
-      ],
-      [
-        2017,
-        20
+        21
       ],
       [
         2013,
@@ -27,6 +23,10 @@
       [
         2014,
         14
+      ],
+      [
+        2017,
+        13
       ],
       [
         2015,
@@ -69,14 +69,14 @@
     "funders-backfile": 0,
     "licenses-backfile": 0,
     "funders-current": 0,
-    "affiliations-backfile": 0.04794520547945205,
+    "affiliations-backfile": 0,
     "resource-links-backfile": 0,
     "orcids-backfile": 0,
     "update-policies-current": 0,
     "ror-ids-backfile": 0,
     "orcids-current": 0,
-    "similarity-checking-backfile": 0.1164383561643836,
-    "references-backfile": 0.04794520547945205,
+    "similarity-checking-backfile": 0,
+    "references-backfile": 0,
     "descriptions-backfile": 0,
     "award-numbers-backfile": 0,
     "update-policies-backfile": 0,
@@ -100,11 +100,11 @@
   ],
   "counts-type": {
     "all": {
-      "journal-article": 25,
+      "journal-article": 8,
       "journal-issue": 121
     },
     "backfile": {
-      "journal-article": 25,
+      "journal-article": 8,
       "journal-issue": 121
     },
     "current": {}
@@ -112,14 +112,14 @@
   "coverage-type": {
     "all": {
       "journal-article": {
-        "last-status-check-time": 1674094057952,
-        "affiliations": 0.28,
+        "last-status-check-time": 1753055843340,
+        "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
         "licenses": 0,
-        "references": 0.28,
+        "references": 0,
         "funders": 0,
-        "similarity-checking": 0.68,
+        "similarity-checking": 0,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -127,7 +127,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1674094057952,
+        "last-status-check-time": 1753055843340,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -144,14 +144,14 @@
     },
     "backfile": {
       "journal-article": {
-        "last-status-check-time": 1674094057952,
-        "affiliations": 0.28,
+        "last-status-check-time": 1753055843340,
+        "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
         "licenses": 0,
-        "references": 0.28,
+        "references": 0,
         "funders": 0,
-        "similarity-checking": 0.68,
+        "similarity-checking": 0,
         "award-numbers": 0,
         "ror-ids": 0,
         "update-policies": 0,
@@ -159,7 +159,7 @@
         "descriptions": 0
       },
       "journal-issue": {
-        "last-status-check-time": 1674094057952,
+        "last-status-check-time": 1753055843340,
         "affiliations": 0,
         "abstracts": 0,
         "orcids": 0,
@@ -180,16 +180,16 @@
     "deposits-abstracts-current": false,
     "deposits-orcids-current": false,
     "deposits": true,
-    "deposits-affiliations-backfile": true,
+    "deposits-affiliations-backfile": false,
     "deposits-update-policies-backfile": false,
-    "deposits-similarity-checking-backfile": true,
+    "deposits-similarity-checking-backfile": false,
     "deposits-award-numbers-current": false,
     "deposits-resource-links-current": false,
     "deposits-ror-ids-current": false,
     "deposits-articles": true,
     "deposits-affiliations-current": false,
     "deposits-funders-current": false,
-    "deposits-references-backfile": true,
+    "deposits-references-backfile": false,
     "deposits-ror-ids-backfile": false,
     "deposits-abstracts-backfile": false,
     "deposits-licenses-backfile": false,

@@ -74,6 +74,7 @@ Go to http://127.0.0.1:8000 ...
 
 ## Meta
 
+- Created: October 2022
 - License: [GPL3](./LICENSE)
 - Copyright Holder: [SLUB Dresden](https://www.slub-dresden.de)
 - Author + Maintainer: [Donatus Herre](https://orcid.org/0000-0003-4335-2535)

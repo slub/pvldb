@@ -1,12 +1,24 @@
 {
-  "last-status-check-time": 1674102269969,
+  "last-status-check-time": 1753058198067,
   "counts": {
-    "current-dois": 634,
-    "backfile-dois": 2866,
-    "total-dois": 3500
+    "current-dois": 819,
+    "backfile-dois": 3568,
+    "total-dois": 4387
   },
   "breakdowns": {
     "dois-by-issued-year": [
+      [
+        2024,
+        447
+      ],
+      [
+        2023,
+        372
+      ],
+      [
+        2022,
+        357
+      ],
       [
         2021,
         345
@@ -14,10 +26,6 @@
       [
         2020,
         316
-      ],
-      [
-        2022,
-        289
       ],
       [
         2013,
@@ -71,81 +79,76 @@
   },
   "publisher": "VLDB Endowment",
   "coverage": {
-    "affiliations-current": 1,
-    "similarity-checking-current": 0.9921135646687697,
+    "affiliations-current": 0.9987789987789988,
+    "similarity-checking-current": 1,
     "descriptions-current": 0,
     "ror-ids-current": 0,
     "funders-backfile": 0,
-    "licenses-backfile": 0,
+    "licenses-backfile": 0.005605381165919283,
     "funders-current": 0,
-    "affiliations-backfile": 0.9480111653872993,
-    "resource-links-backfile": 0,
-    "orcids-backfile": 0,
-    "update-policies-current": 0.03312302839116719,
+    "affiliations-backfile": 0.9582399103139013,
+    "resource-links-backfile": 0.005605381165919283,
+    "orcids-backfile": 0.0002802690582959641,
+    "update-policies-current": 1,
     "ror-ids-backfile": 0,
-    "orcids-current": 0.001577287066246057,
-    "similarity-checking-backfile": 0.950453593859037,
-    "references-backfile": 0.9385903698534543,
+    "orcids-current": 0.001221001221001221,
+    "similarity-checking-backfile": 0.9588004484304933,
+    "references-backfile": 0.9487107623318386,
     "descriptions-backfile": 0,
     "award-numbers-backfile": 0,
-    "update-policies-backfile": 0,
+    "update-policies-backfile": 0.02494394618834081,
     "licenses-current": 0,
     "award-numbers-current": 0,
-    "abstracts-backfile": 0.9459176552686671,
+    "abstracts-backfile": 0.9593609865470852,
     "resource-links-current": 0,
     "abstracts-current": 1,
-    "references-current": 0.9889589905362776
+    "references-current": 0.9938949938949939
   },
   "title": "Proceedings of the VLDB Endowment",
-  "subjects": [
-    {
-      "ASJC": 2700,
-      "name": "General Medicine"
-    }
-  ],
+  "subjects": [],
   "coverage-type": {
     "all": {
-      "last-status-check-time": 1674102269969,
-      "affiliations": 0.9574285714285714,
-      "abstracts": 0.9557142857142857,
-      "orcids": 0.0002857142857142857,
-      "licenses": 0,
-      "references": 0.9477142857142857,
+      "last-status-check-time": 1753058198067,
+      "affiliations": 0.9658080692956462,
+      "abstracts": 0.9669478003191248,
+      "orcids": 0.0004558924093913836,
+      "licenses": 0.004558924093913836,
+      "references": 0.9571461135172099,
       "funders": 0,
-      "similarity-checking": 0.958,
+      "similarity-checking": 0.9664919079097333,
       "award-numbers": 0,
       "ror-ids": 0,
-      "update-policies": 0.006,
-      "resource-links": 0,
+      "update-policies": 0.2069751538636882,
+      "resource-links": 0.004558924093913836,
       "descriptions": 0
     },
     "backfile": {
-      "last-status-check-time": 1674102269969,
-      "affiliations": 0.9480111653872993,
-      "abstracts": 0.9459176552686671,
-      "orcids": 0,
-      "licenses": 0,
-      "references": 0.9385903698534543,
+      "last-status-check-time": 1753058198067,
+      "affiliations": 0.9582399103139013,
+      "abstracts": 0.9593609865470852,
+      "orcids": 0.0002802690582959641,
+      "licenses": 0.005605381165919283,
+      "references": 0.9487107623318386,
       "funders": 0,
-      "similarity-checking": 0.950453593859037,
+      "similarity-checking": 0.9588004484304933,
       "award-numbers": 0,
       "ror-ids": 0,
-      "update-policies": 0,
-      "resource-links": 0,
+      "update-policies": 0.02494394618834081,
+      "resource-links": 0.005605381165919283,
       "descriptions": 0
     },
     "current": {
-      "last-status-check-time": 1674102269969,
-      "affiliations": 1,
+      "last-status-check-time": 1753058198067,
+      "affiliations": 0.9987789987789988,
       "abstracts": 1,
-      "orcids": 0.001577287066246057,
+      "orcids": 0.001221001221001221,
       "licenses": 0,
-      "references": 0.9889589905362776,
+      "references": 0.9938949938949939,
       "funders": 0,
-      "similarity-checking": 0.9921135646687697,
+      "similarity-checking": 1,
       "award-numbers": 0,
       "ror-ids": 0,
-      "update-policies": 0.03312302839116719,
+      "update-policies": 1,
       "resource-links": 0,
       "descriptions": 0
     }
@@ -155,7 +158,7 @@
     "deposits-orcids-current": true,
     "deposits": true,
     "deposits-affiliations-backfile": true,
-    "deposits-update-policies-backfile": false,
+    "deposits-update-policies-backfile": true,
     "deposits-similarity-checking-backfile": true,
     "deposits-award-numbers-current": false,
     "deposits-resource-links-current": false,
@@ -166,13 +169,13 @@
     "deposits-references-backfile": true,
     "deposits-ror-ids-backfile": false,
     "deposits-abstracts-backfile": true,
-    "deposits-licenses-backfile": false,
+    "deposits-licenses-backfile": true,
     "deposits-award-numbers-backfile": false,
     "deposits-descriptions-current": false,
     "deposits-references-current": true,
-    "deposits-resource-links-backfile": false,
+    "deposits-resource-links-backfile": true,
     "deposits-descriptions-backfile": false,
-    "deposits-orcids-backfile": false,
+    "deposits-orcids-backfile": true,
     "deposits-funders-backfile": false,
     "deposits-update-policies-current": true,
     "deposits-similarity-checking-current": true,
@@ -183,8 +186,8 @@
   ],
   "issn-type": [
     {
-      "value": "2150-8097",
-      "type": "print"
+      "type": "print",
+      "value": "2150-8097"
     }
   ]
 }

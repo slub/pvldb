@@ -1,5 +1,5 @@
 {
-  "member": "http://id.crossref.org/member/5777",
+  "member": "https://id.crossref.org/member/5777",
   "name": "VLDB Endowment",
-  "prefix": "http://id.crossref.org/prefix/10.14778"
+  "prefix": "https://id.crossref.org/prefix/10.14778"
 }
