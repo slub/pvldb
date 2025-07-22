@@ -4,7 +4,7 @@ author: "Donatus Herre (SLUB Dresden)"
 subtitle: "Bibliometric Analysis"
 pagetitle: "PVLDB :: Bibliometric Analysis :: Outtakes"
 author-meta: "SLUB Dresden"
-date: "2023-01-19"
+date: "2025-07-22"
 lang: "en-US"
 output:
   html_document:
@@ -63,8 +63,8 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
 
 # Raw Data
 
-- JournalsDB (last update: 2022-10-17)
-  - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, 3.96 KB]
+- JournalsDB (last update: 2025-07-22)
+  - [journals](./data/journalsdb_journals_2150-8097.json) (`2150-8097`) [JSON, 4.00 KB]
 
 # Data Sources
 
