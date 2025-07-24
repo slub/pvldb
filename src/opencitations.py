@@ -88,7 +88,7 @@ def fetch_citations(dois):
         if isinstance(citations, list):
             mapping[doi] = []
             for citation in citations:
-                if isinstance(citation, dict) and "citing" in citation:
+                if isinstance(citation, dict) and "citing" in citation and citation["citing"]:
                     mapping[doi].append(citation["citing"])
         else:
             mapping[doi] = None
