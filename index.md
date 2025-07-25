@@ -67,7 +67,7 @@ Branches: [main](https://github.com/slub/pvldb/tree/main) / [gh-pages](https://g
       - [dois](./data/crossref_works_filter-issn-2150-8097_dois-citation.json) [JSON, 1.94 MB]
       - [issns](./data/crossref_works_filter-issn-2150-8097_issns-citation.json) [JSON, 60.03 KB]
       - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.json) [JSON, 72.76 KB]
-      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, 225.96 KB] (enriched via OpenAlex)
+      - [count-issns](./data/crossref_works_filter-issn-2150-8097_count-issns-citation.csv) [CSV, 225.93 KB] (enriched via OpenAlex)
       - [year-types](./data/crossref_works_filter-issn-2150-8097_year-types-citation.json) [JSON, 1.50 MB]
     - [count-citation](./data/crossref_works_filter-issn-2150-8097_count-citation.json) [JSON, 146.35 KB] (via OpenCitations)
     - [reference](./data/crossref_works_filter-issn-2150-8097_reference.json) [JSON, 2.99 MB]

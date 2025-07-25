@@ -11,7 +11,7 @@
     "https://openalex.org/P4310319798"
   ],
   "works_count": 3571,
-  "cited_by_count": 180243,
+  "cited_by_count": 180438,
   "summary_stats": {
     "2yr_mean_citedness": 4.995884773662551,
     "h_index": 185,
@@ -1077,12 +1077,12 @@
     {
       "year": 2025,
       "works_count": 0,
-      "cited_by_count": 4806
+      "cited_by_count": 5008
     },
     {
       "year": 2024,
       "works_count": 447,
-      "cited_by_count": 14166
+      "cited_by_count": 14167
     },
     {
       "year": 2023,
@@ -1146,6 +1146,6 @@
     }
   ],
   "works_api_url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210226185",
-  "updated_date": "2025-07-17T19:41:53.554218",
+  "updated_date": "2025-07-22T14:03:26.818601",
   "created_date": "2022-02-03"
 }

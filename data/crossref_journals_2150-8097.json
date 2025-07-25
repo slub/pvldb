@@ -1,5 +1,5 @@
 {
-  "last-status-check-time": 1753058198067,
+  "last-status-check-time": 1753372217135,
   "counts": {
     "current-dois": 819,
     "backfile-dois": 3568,
@@ -108,7 +108,7 @@
   "subjects": [],
   "coverage-type": {
     "all": {
-      "last-status-check-time": 1753058198067,
+      "last-status-check-time": 1753372217135,
       "affiliations": 0.9658080692956462,
       "abstracts": 0.9669478003191248,
       "orcids": 0.0004558924093913836,
@@ -123,7 +123,7 @@
       "descriptions": 0
     },
     "backfile": {
-      "last-status-check-time": 1753058198067,
+      "last-status-check-time": 1753372217135,
       "affiliations": 0.9582399103139013,
       "abstracts": 0.9593609865470852,
       "orcids": 0.0002802690582959641,
@@ -138,7 +138,7 @@
       "descriptions": 0
     },
     "current": {
-      "last-status-check-time": 1753058198067,
+      "last-status-check-time": 1753372217135,
       "affiliations": 0.9987789987789988,
       "abstracts": 1,
       "orcids": 0.001221001221001221,
