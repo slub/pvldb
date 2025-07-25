@@ -38,6 +38,13 @@ Rscript renv/activate.R
 Rscript -e "renv::restore()"
 ```
 
+If restoring the environment with an older version of R fails, try installing the required packages directly:
+
+```sh
+Rscript -e "install.packages(c('rmarkdown', 'ggplot2'))"
+Rscript -e "renv::status()"
+```
+
 #### Environment
 
 ```sh
