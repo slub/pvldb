@@ -6,12 +6,12 @@ Powered by [actions](https://github.com/slub/pvldb/actions) workflow. See [repor
 
 ### Requirements
 
-- Unix-like OS (tested on Ubuntu 20.04)
-- Git (tested with version 2.37)
-- cURL (tested with version 7.68)
+- Unix-like OS (tested on Ubuntu 22.04)
+- Git (tested with version 2.34)
+- cURL (tested with version 7.81)
 - gzip (tested with version 1.10)
 - jq (tested with version 1.6)
-- R (tested with version 4.2)
+- R (tested with version 4.5)
 - Python (tested with version 3.10)
 
 ### Set up
